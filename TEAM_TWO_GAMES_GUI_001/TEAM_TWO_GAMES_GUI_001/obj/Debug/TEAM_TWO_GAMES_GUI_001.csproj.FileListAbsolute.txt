@@ -8,3 +8,6 @@ c:\users\brian\documents\visual studio 2015\Projects\TEAM_TWO_GAMES_GUI_001\TEAM
 c:\users\brian\documents\visual studio 2015\Projects\TEAM_TWO_GAMES_GUI_001\TEAM_TWO_GAMES_GUI_001\obj\Debug\TEAM_TWO_GAMES_GUI_001.exe
 c:\users\brian\documents\visual studio 2015\Projects\TEAM_TWO_GAMES_GUI_001\TEAM_TWO_GAMES_GUI_001\obj\Debug\TEAM_TWO_GAMES_GUI_001.pdb
 c:\users\brian\documents\visual studio 2015\Projects\TEAM_TWO_GAMES_GUI_001\TEAM_TWO_GAMES_GUI_001\obj\Debug\TEAM_TWO_GAMES_GUI_001.CUSTOMER_SEARCH.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\TEAM_TWO_GAMES_GUI_001\TEAM_TWO_GAMES_GUI_001\bin\Debug\TEAM_TWO_GAMES_GUI_001.exe.config
+C:\ComputerProgramming\cst117\CST117_InventoryProject\TEAM_TWO_GAMES_GUI_001\TEAM_TWO_GAMES_GUI_001\obj\Debug\TEAM_TWO_GAMES_GUI_001.exe
+C:\ComputerProgramming\cst117\CST117_InventoryProject\TEAM_TWO_GAMES_GUI_001\TEAM_TWO_GAMES_GUI_001\obj\Debug\TEAM_TWO_GAMES_GUI_001.pdb
