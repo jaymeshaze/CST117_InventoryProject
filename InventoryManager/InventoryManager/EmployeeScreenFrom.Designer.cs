@@ -1,6 +1,6 @@
 ﻿namespace InventoryManager
 {
-    partial class CustomerSearch
+    partial class EmployeeScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerSearch));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeScreen));
             this.CustomerSearchBox = new System.Windows.Forms.TextBox();
             this.SearchBoxLabel = new System.Windows.Forms.Label();
             this.CustomerSearchBoxButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CustomerSearchAllButton = new System.Windows.Forms.Button();
             this.or_label = new System.Windows.Forms.Label();
+            this.Header = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,7 +46,7 @@
             this.CustomerSearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomerSearchBox.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.CustomerSearchBox.Location = new System.Drawing.Point(536, 267);
-            this.CustomerSearchBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CustomerSearchBox.Margin = new System.Windows.Forms.Padding(2);
             this.CustomerSearchBox.Name = "CustomerSearchBox";
             this.CustomerSearchBox.Size = new System.Drawing.Size(311, 37);
             this.CustomerSearchBox.TabIndex = 1;
@@ -86,7 +87,7 @@
             // 
             this.pictureBox1.Image = global::InventoryManager.Properties.Resources.TTG_LOGO_LOGIN_SCREEN_WIDTH_477PX;
             this.pictureBox1.Location = new System.Drawing.Point(531, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(486, 321);
             this.pictureBox1.TabIndex = 0;
@@ -98,7 +99,7 @@
             this.CustomerSearchAllButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomerSearchAllButton.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.CustomerSearchAllButton.Location = new System.Drawing.Point(537, 518);
-            this.CustomerSearchAllButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CustomerSearchAllButton.Margin = new System.Windows.Forms.Padding(2);
             this.CustomerSearchAllButton.Name = "CustomerSearchAllButton";
             this.CustomerSearchAllButton.Size = new System.Drawing.Size(353, 107);
             this.CustomerSearchAllButton.TabIndex = 4;
@@ -119,12 +120,25 @@
             this.or_label.Text = "or";
             this.or_label.Click += new System.EventHandler(this.label1_Click);
             // 
-            // CustomerSearch
+            // Header
+            // 
+            this.Header.AutoSize = true;
+            this.Header.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Header.Location = new System.Drawing.Point(201, 38);
+            this.Header.Name = "Header";
+            this.Header.Size = new System.Drawing.Size(306, 39);
+            this.Header.TabIndex = 6;
+            this.Header.Text = "Employee Screen";
+            this.Header.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.Header.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // EmployeeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1426, 841);
+            this.Controls.Add(this.Header);
             this.Controls.Add(this.or_label);
             this.Controls.Add(this.CustomerSearchAllButton);
             this.Controls.Add(this.CustomerSearchBoxButton);
@@ -133,8 +147,8 @@
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "CustomerSearch";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "EmployeeScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team 2 Games Customer Search";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -153,5 +167,6 @@
         private System.Windows.Forms.Button CustomerSearchBoxButton;
         private System.Windows.Forms.Button CustomerSearchAllButton;
         private System.Windows.Forms.Label or_label;
+        private System.Windows.Forms.Label Header;
     }
 }

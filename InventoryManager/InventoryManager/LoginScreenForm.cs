@@ -19,6 +19,28 @@ namespace InventoryManager
 
         private void LOGIN_BUTTON_Click(object sender, EventArgs e)
         {
+           
+            string login = UsernameTextField.Text;
+            switch (login)
+            {
+                case "Guest":
+                    this.Hide();
+                    CustomerSearch openForm1 = new CustomerSearch();
+                    openForm1.Show();
+                    break;
+                case "Employee":
+                    this.Hide();
+                    EmployeeScreen openForm2 = new EmployeeScreen();
+                    openForm2.Show();
+                    break;
+                case "Manager":
+                    this.Hide();
+                    ManagerScreen openForm3 = new ManagerScreen();
+                    openForm3.Show();
+                    break;
+                default:
+                    break;
+            }
 
         }
 

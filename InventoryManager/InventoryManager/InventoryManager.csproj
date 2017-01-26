@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManagerScreenFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerScreenFrom.Designer.cs">
+      <DependentUpon>ManagerScreenFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeScreenFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeScreenFrom.Designer.cs">
+      <DependentUpon>EmployeeScreenFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomerSearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ManagerScreenFrom.resx">
+      <DependentUpon>ManagerScreenFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeScreenFrom.resx">
+      <DependentUpon>EmployeeScreenFrom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomerSearchForm.resx">
       <DependentUpon>CustomerSearchForm.cs</DependentUpon>
     </EmbeddedResource>

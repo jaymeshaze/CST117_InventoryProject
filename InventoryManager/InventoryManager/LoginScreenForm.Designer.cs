@@ -40,37 +40,40 @@
             ((System.ComponentModel.ISupportInitialize)(this.LoginLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // USERNAME
+            // UsernameTextField
             // 
             this.UsernameTextField.BackColor = System.Drawing.Color.WhiteSmoke;
             this.UsernameTextField.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameTextField.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.UsernameTextField.Location = new System.Drawing.Point(180, 60);
-            this.UsernameTextField.Name = "USERNAME";
+            this.UsernameTextField.Location = new System.Drawing.Point(135, 49);
+            this.UsernameTextField.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UsernameTextField.Name = "UsernameTextField";
             this.UsernameTextField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.UsernameTextField.Size = new System.Drawing.Size(256, 30);
+            this.UsernameTextField.Size = new System.Drawing.Size(193, 26);
             this.UsernameTextField.TabIndex = 0;
             this.UsernameTextField.Text = "Guest";
             // 
-            // PASSWORD
+            // PasswordTextField
             // 
             this.PasswordTextField.BackColor = System.Drawing.Color.WhiteSmoke;
             this.PasswordTextField.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextField.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.PasswordTextField.Location = new System.Drawing.Point(180, 100);
-            this.PasswordTextField.Name = "PASSWORD";
-            this.PasswordTextField.Size = new System.Drawing.Size(256, 30);
+            this.PasswordTextField.Location = new System.Drawing.Point(135, 81);
+            this.PasswordTextField.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PasswordTextField.Name = "PasswordTextField";
+            this.PasswordTextField.Size = new System.Drawing.Size(193, 26);
             this.PasswordTextField.TabIndex = 1;
             this.PasswordTextField.Text = "password";
             // 
-            // LOGIN_BUTTON
+            // LoginButton
             // 
-            this.LoginButton.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginButton.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.LoginButton.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.LoginButton.Location = new System.Drawing.Point(214, 153);
-            this.LoginButton.Name = "LOGIN_BUTTON";
-            this.LoginButton.Size = new System.Drawing.Size(188, 38);
+            this.LoginButton.Location = new System.Drawing.Point(160, 124);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(141, 31);
             this.LoginButton.TabIndex = 2;
             this.LoginButton.Text = "LOGIN";
             this.LoginButton.UseVisualStyleBackColor = true;
@@ -79,26 +82,28 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(31, 66);
+            this.label1.Location = new System.Drawing.Point(23, 54);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 21);
+            this.label1.Size = new System.Drawing.Size(105, 20);
             this.label1.TabIndex = 3;
             this.label1.Text = "USERNAME:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(28, 106);
+            this.label2.Location = new System.Drawing.Point(21, 86);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(146, 21);
+            this.label2.Size = new System.Drawing.Size(107, 20);
             this.label2.TabIndex = 4;
             this.label2.Text = "PASSWORD:";
             // 
-            // LOG_IN_groupBox
+            // LoginGroupBox
             // 
             this.LoginGroupBox.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.LoginGroupBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -107,36 +112,40 @@
             this.LoginGroupBox.Controls.Add(this.UsernameTextField);
             this.LoginGroupBox.Controls.Add(this.label1);
             this.LoginGroupBox.Controls.Add(this.LoginButton);
-            this.LoginGroupBox.Font = new System.Drawing.Font("Neuropol", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoginGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginGroupBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.LoginGroupBox.Location = new System.Drawing.Point(903, 315);
-            this.LoginGroupBox.Name = "LOG_IN_groupBox";
-            this.LoginGroupBox.Size = new System.Drawing.Size(467, 245);
+            this.LoginGroupBox.Location = new System.Drawing.Point(677, 256);
+            this.LoginGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LoginGroupBox.Name = "LoginGroupBox";
+            this.LoginGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LoginGroupBox.Size = new System.Drawing.Size(350, 199);
             this.LoginGroupBox.TabIndex = 5;
             this.LoginGroupBox.TabStop = false;
             this.LoginGroupBox.Text = "SIGN IN";
             // 
-            // LOGIN_LOGO
+            // LoginLogo
             // 
             this.LoginLogo.Image = global::InventoryManager.Properties.Resources.TTG_LOGO_LOGIN_SCREEN_WIDTH_477PX;
-            this.LoginLogo.Location = new System.Drawing.Point(382, 315);
-            this.LoginLogo.Name = "LOGIN_LOGO";
-            this.LoginLogo.Size = new System.Drawing.Size(493, 363);
+            this.LoginLogo.Location = new System.Drawing.Point(174, 256);
+            this.LoginLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LoginLogo.Name = "LoginLogo";
+            this.LoginLogo.Size = new System.Drawing.Size(488, 295);
             this.LoginLogo.TabIndex = 6;
             this.LoginLogo.TabStop = false;
             // 
-            // LOGIN_SCREEN
+            // LoginScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1902, 1035);
+            this.ClientSize = new System.Drawing.Size(1426, 841);
             this.Controls.Add(this.LoginLogo);
             this.Controls.Add(this.LoginGroupBox);
             this.ForeColor = System.Drawing.Color.Coral;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "LOGIN_SCREEN";
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "LoginScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team 2 Games Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
