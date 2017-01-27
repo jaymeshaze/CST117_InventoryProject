@@ -35,3 +35,15 @@ C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.
 C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\obj\Debug\InventoryManager.csproj.GenerateResource.Cache
 C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\obj\Debug\InventoryManager.ManagerScreen.resources
 C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\obj\Debug\InventoryManager.EmployeeScreen.resources
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe.config
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.pdb
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ManagerScreen.resources
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.EmployeeScreen.resources
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.CustomerSearch.resources
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.LoginScreen.resources
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.Properties.Resources.resources
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csproj.GenerateResource.Cache
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.exe
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.pdb
