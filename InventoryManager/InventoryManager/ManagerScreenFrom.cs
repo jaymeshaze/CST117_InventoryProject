@@ -22,17 +22,23 @@ namespace InventoryManager
 
         }
 
-        private void CUST_SRCH_ALL_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void CUST_SRCH_BOX_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        
+
+        private void btnClickLogout(object sender, EventArgs e)
+        {
+            this.Close();
+            LoginScreen login = new LoginScreen();
+            login.Show();
+        }
+
+        private void CustomerSearchBox_TextChanged(object sender, EventArgs e)
         {
 
         }
