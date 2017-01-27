@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.LoginGroupBox = new System.Windows.Forms.GroupBox();
             this.LoginLogo = new System.Windows.Forms.PictureBox();
+            this.btnExitApplication = new System.Windows.Forms.Button();
             this.LoginGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoginLogo)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +47,7 @@
             this.UsernameTextField.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameTextField.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.UsernameTextField.Location = new System.Drawing.Point(135, 49);
-            this.UsernameTextField.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UsernameTextField.Margin = new System.Windows.Forms.Padding(2);
             this.UsernameTextField.Name = "UsernameTextField";
             this.UsernameTextField.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.UsernameTextField.Size = new System.Drawing.Size(193, 26);
@@ -59,7 +60,7 @@
             this.PasswordTextField.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PasswordTextField.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.PasswordTextField.Location = new System.Drawing.Point(135, 81);
-            this.PasswordTextField.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PasswordTextField.Margin = new System.Windows.Forms.Padding(2);
             this.PasswordTextField.Name = "PasswordTextField";
             this.PasswordTextField.Size = new System.Drawing.Size(193, 26);
             this.PasswordTextField.TabIndex = 1;
@@ -71,7 +72,7 @@
             this.LoginButton.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.LoginButton.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.LoginButton.Location = new System.Drawing.Point(160, 124);
-            this.LoginButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LoginButton.Margin = new System.Windows.Forms.Padding(2);
             this.LoginButton.Name = "LoginButton";
             this.LoginButton.Size = new System.Drawing.Size(141, 31);
             this.LoginButton.TabIndex = 2;
@@ -115,9 +116,9 @@
             this.LoginGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginGroupBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.LoginGroupBox.Location = new System.Drawing.Point(677, 256);
-            this.LoginGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LoginGroupBox.Margin = new System.Windows.Forms.Padding(2);
             this.LoginGroupBox.Name = "LoginGroupBox";
-            this.LoginGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LoginGroupBox.Padding = new System.Windows.Forms.Padding(2);
             this.LoginGroupBox.Size = new System.Drawing.Size(350, 199);
             this.LoginGroupBox.TabIndex = 5;
             this.LoginGroupBox.TabStop = false;
@@ -127,24 +128,36 @@
             // 
             this.LoginLogo.Image = global::InventoryManager.Properties.Resources.TTG_LOGO_LOGIN_SCREEN_WIDTH_477PX;
             this.LoginLogo.Location = new System.Drawing.Point(174, 256);
-            this.LoginLogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LoginLogo.Margin = new System.Windows.Forms.Padding(2);
             this.LoginLogo.Name = "LoginLogo";
             this.LoginLogo.Size = new System.Drawing.Size(488, 295);
             this.LoginLogo.TabIndex = 6;
             this.LoginLogo.TabStop = false;
+            // 
+            // btnExitApplication
+            // 
+            this.btnExitApplication.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnExitApplication.Location = new System.Drawing.Point(886, 460);
+            this.btnExitApplication.Name = "btnExitApplication";
+            this.btnExitApplication.Size = new System.Drawing.Size(141, 31);
+            this.btnExitApplication.TabIndex = 7;
+            this.btnExitApplication.Text = "Exit Application";
+            this.btnExitApplication.UseVisualStyleBackColor = true;
+            this.btnExitApplication.Click += new System.EventHandler(this.exitEvent);
             // 
             // LoginScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1426, 841);
+            this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Controls.Add(this.btnExitApplication);
             this.Controls.Add(this.LoginLogo);
             this.Controls.Add(this.LoginGroupBox);
             this.ForeColor = System.Drawing.Color.Coral;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "LoginScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team 2 Games Login";
@@ -166,6 +179,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox LoginGroupBox;
         private System.Windows.Forms.PictureBox LoginLogo;
+        private System.Windows.Forms.Button btnExitApplication;
     }
 }
 

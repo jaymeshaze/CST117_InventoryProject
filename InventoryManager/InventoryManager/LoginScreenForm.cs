@@ -48,5 +48,10 @@ namespace InventoryManager
         {
 
         }
+
+        private void exitEvent(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -35,6 +35,10 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Header = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btnUserManagement = new System.Windows.Forms.Button();
+            this.btnInventoryManagement = new System.Windows.Forms.Button();
+            this.btnInventoryOptimization = new System.Windows.Forms.Button();
+            this.btnInventoryOrdering = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,7 +48,7 @@
             this.CustomerSearchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CustomerSearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomerSearchBox.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.CustomerSearchBox.Location = new System.Drawing.Point(972, 190);
+            this.CustomerSearchBox.Location = new System.Drawing.Point(969, 190);
             this.CustomerSearchBox.Margin = new System.Windows.Forms.Padding(2);
             this.CustomerSearchBox.Name = "CustomerSearchBox";
             this.CustomerSearchBox.Size = new System.Drawing.Size(311, 37);
@@ -58,7 +62,7 @@
             this.SearchBoxLabel.BackColor = System.Drawing.Color.WhiteSmoke;
             this.SearchBoxLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SearchBoxLabel.ForeColor = System.Drawing.Color.DarkGray;
-            this.SearchBoxLabel.Location = new System.Drawing.Point(999, 194);
+            this.SearchBoxLabel.Location = new System.Drawing.Point(1020, 159);
             this.SearchBoxLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.SearchBoxLabel.Name = "SearchBoxLabel";
             this.SearchBoxLabel.Size = new System.Drawing.Size(260, 29);
@@ -116,12 +120,64 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnClickLogout);
             // 
+            // btnUserManagement
+            // 
+            this.btnUserManagement.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnUserManagement.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnUserManagement.Location = new System.Drawing.Point(472, 275);
+            this.btnUserManagement.Name = "btnUserManagement";
+            this.btnUserManagement.Size = new System.Drawing.Size(229, 88);
+            this.btnUserManagement.TabIndex = 9;
+            this.btnUserManagement.Text = "User Management";
+            this.btnUserManagement.UseVisualStyleBackColor = false;
+            this.btnUserManagement.Click += new System.EventHandler(this.manageUsersEvent);
+            // 
+            // btnInventoryManagement
+            // 
+            this.btnInventoryManagement.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnInventoryManagement.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnInventoryManagement.Location = new System.Drawing.Point(736, 275);
+            this.btnInventoryManagement.Name = "btnInventoryManagement";
+            this.btnInventoryManagement.Size = new System.Drawing.Size(229, 88);
+            this.btnInventoryManagement.TabIndex = 10;
+            this.btnInventoryManagement.Text = "Inventory Management";
+            this.btnInventoryManagement.UseVisualStyleBackColor = false;
+            this.btnInventoryManagement.Click += new System.EventHandler(this.inventoryDisplayEvent);
+            // 
+            // btnInventoryOptimization
+            // 
+            this.btnInventoryOptimization.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnInventoryOptimization.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnInventoryOptimization.Location = new System.Drawing.Point(472, 404);
+            this.btnInventoryOptimization.Name = "btnInventoryOptimization";
+            this.btnInventoryOptimization.Size = new System.Drawing.Size(229, 88);
+            this.btnInventoryOptimization.TabIndex = 11;
+            this.btnInventoryOptimization.Text = "Inventory Optimization";
+            this.btnInventoryOptimization.UseVisualStyleBackColor = false;
+            this.btnInventoryOptimization.Click += new System.EventHandler(this.inventoryOptimizationEvent);
+            // 
+            // btnInventoryOrdering
+            // 
+            this.btnInventoryOrdering.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnInventoryOrdering.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnInventoryOrdering.Location = new System.Drawing.Point(736, 404);
+            this.btnInventoryOrdering.Name = "btnInventoryOrdering";
+            this.btnInventoryOrdering.Size = new System.Drawing.Size(229, 88);
+            this.btnInventoryOrdering.TabIndex = 12;
+            this.btnInventoryOrdering.Text = "Inventory Ordering";
+            this.btnInventoryOrdering.UseVisualStyleBackColor = false;
+            this.btnInventoryOrdering.Click += new System.EventHandler(this.inventoryOrderEvent);
+            // 
             // ManagerScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.Controls.Add(this.btnInventoryOrdering);
+            this.Controls.Add(this.btnInventoryOptimization);
+            this.Controls.Add(this.btnInventoryManagement);
+            this.Controls.Add(this.btnUserManagement);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.Header);
             this.Controls.Add(this.CustomerSearchBoxButton);
@@ -150,5 +206,9 @@
         private System.Windows.Forms.Button CustomerSearchBoxButton;
         private System.Windows.Forms.Label Header;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnUserManagement;
+        private System.Windows.Forms.Button btnInventoryManagement;
+        private System.Windows.Forms.Button btnInventoryOptimization;
+        private System.Windows.Forms.Button btnInventoryOrdering;
     }
 }
