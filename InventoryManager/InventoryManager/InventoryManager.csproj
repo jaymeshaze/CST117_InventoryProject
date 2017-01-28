@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManagerInventoryManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerInventoryManageForm.Designer.cs">
+      <DependentUpon>ManagerInventoryManageForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerScreenFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ManagerInventoryManageForm.resx">
+      <DependentUpon>ManagerInventoryManageForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerScreenFrom.resx">
       <DependentUpon>ManagerScreenFrom.cs</DependentUpon>
     </EmbeddedResource>
