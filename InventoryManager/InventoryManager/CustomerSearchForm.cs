@@ -36,5 +36,12 @@ namespace InventoryManager
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginScreen openForm1 = new LoginScreen();
+            openForm1.Show();
+        }
     }
 }
