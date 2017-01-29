@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManagerAnalyticDataForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerAnalyticDataForm.Designer.cs">
+      <DependentUpon>ManagerAnalyticDataForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerInventoryAnalyticsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerInventoryAnalyticsForm.Designer.cs">
+      <DependentUpon>ManagerInventoryAnalyticsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerInventoryManageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerInventoryManageForm.Designer.cs">
+      <DependentUpon>ManagerInventoryManageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerProductDetailSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerProductDetailSearch.Designer.cs">
+      <DependentUpon>ManagerProductDetailSearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerScreenFrom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,8 +94,32 @@
     <Compile Include="LoginScreenForm.Designer.cs">
       <DependentUpon>LoginScreenForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerStockManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerStockManagementForm.Designer.cs">
+      <DependentUpon>ManagerStockManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerProductDetailsManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerProductDetailsManagementForm.Designer.cs">
+      <DependentUpon>ManagerProductDetailsManagementForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ManagerAnalyticDataForm.resx">
+      <DependentUpon>ManagerAnalyticDataForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerInventoryAnalyticsForm.resx">
+      <DependentUpon>ManagerInventoryAnalyticsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerInventoryManageForm.resx">
+      <DependentUpon>ManagerInventoryManageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerProductDetailSearch.resx">
+      <DependentUpon>ManagerProductDetailSearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerScreenFrom.resx">
       <DependentUpon>ManagerScreenFrom.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +131,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginScreenForm.resx">
       <DependentUpon>LoginScreenForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerProductDetailsManagementForm.resx">
+      <DependentUpon>ManagerProductDetailsManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerStockManagementForm.resx">
+      <DependentUpon>ManagerStockManagementForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

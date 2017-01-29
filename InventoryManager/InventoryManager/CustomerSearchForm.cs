@@ -17,11 +17,6 @@ namespace InventoryManager
             InitializeComponent();
         }
 
-        private void CUSTOMER_SEARCH_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void CUST_SRCH_ALL_Click(object sender, EventArgs e)
         {
 
@@ -32,16 +27,16 @@ namespace InventoryManager
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            LoginScreen openForm1 = new LoginScreen();
-            openForm1.Show();
+            LoginScreen ss = new LoginScreen();
+            ss.Show();
+        }
+
+        private void CustomerSearch_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

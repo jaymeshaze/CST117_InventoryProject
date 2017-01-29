@@ -162,7 +162,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team 2 Games Login";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.LOGIN_SCREEN_Load);
+            this.Load += new System.EventHandler(this.LoginScreen_Load);
             this.LoginGroupBox.ResumeLayout(false);
             this.LoginGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LoginLogo)).EndInit();

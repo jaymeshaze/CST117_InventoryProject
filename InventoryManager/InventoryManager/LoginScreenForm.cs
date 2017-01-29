@@ -44,14 +44,14 @@ namespace InventoryManager
 
         }
 
-        private void LOGIN_SCREEN_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void exitEvent(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void LoginScreen_Load(object sender, EventArgs e)
+        {
+      
         }
     }
 }

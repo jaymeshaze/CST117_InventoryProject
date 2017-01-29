@@ -58,5 +58,21 @@ C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\Inventory
 C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csproj.GenerateResource.Cache
 C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.exe
 C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.pdb
-C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ManagerScreen.resources
-C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\obj\Debug\InventoryManager.EmployeeScreen.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe.config
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.exe
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.pdb
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.pdb
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ManagerScreen.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.EmployeeScreen.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.CustomerSearch.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.LoginScreen.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.Properties.Resources.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csproj.GenerateResource.Cache
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.InventoryManager.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.Analytics.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.AnalyticData.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ProductSearch.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ProductDetailsManager.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.StockControl.resources
