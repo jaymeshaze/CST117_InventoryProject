@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\ComputerProgramming\cst117\CST117_InventoryProject\TEAM_TWO_GAMES_GUI_001\TEAM_TWO_GAMES_GUI_001\bin\Debug\TEAM_TWO_GAMES_GUI_001.exe.config
 C:\ComputerProgramming\cst117\CST117_InventoryProject\TEAM_TWO_GAMES_GUI_001\TEAM_TWO_GAMES_GUI_001\obj\Debug\TEAM_TWO_GAMES_GUI_001.exe
 C:\ComputerProgramming\cst117\CST117_InventoryProject\TEAM_TWO_GAMES_GUI_001\TEAM_TWO_GAMES_GUI_001\obj\Debug\TEAM_TWO_GAMES_GUI_001.pdb
@@ -60,3 +61,78 @@ C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\Inventory
 C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.pdb
 C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ManagerScreen.resources
 C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\obj\Debug\InventoryManager.EmployeeScreen.resources
+=======
+C:\ComputerProgramming\cst117\CST117_InventoryProject\TEAM_TWO_GAMES_GUI_001\TEAM_TWO_GAMES_GUI_001\bin\Debug\TEAM_TWO_GAMES_GUI_001.exe.config
+C:\ComputerProgramming\cst117\CST117_InventoryProject\TEAM_TWO_GAMES_GUI_001\TEAM_TWO_GAMES_GUI_001\obj\Debug\TEAM_TWO_GAMES_GUI_001.exe
+C:\ComputerProgramming\cst117\CST117_InventoryProject\TEAM_TWO_GAMES_GUI_001\TEAM_TWO_GAMES_GUI_001\obj\Debug\TEAM_TWO_GAMES_GUI_001.pdb
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\TEAM_TWO_GAMES_GUI_001\bin\Debug\TEAM_TWO_GAMES_GUI_001.exe.config
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\TEAM_TWO_GAMES_GUI_001\obj\Debug\TEAM_TWO_GAMES_GUI_001.exe
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\TEAM_TWO_GAMES_GUI_001\obj\Debug\TEAM_TWO_GAMES_GUI_001.pdb
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\TEAM_TWO_GAMES_GUI_001\bin\Debug\TEAM_TWO_GAMES_GUI_001.exe
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\TEAM_TWO_GAMES_GUI_001\bin\Debug\TEAM_TWO_GAMES_GUI_001.pdb
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\TEAM_TWO_GAMES_GUI_001\obj\Debug\InventoryManager.csprojResolveAssemblyReference.cache
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\TEAM_TWO_GAMES_GUI_001\obj\Debug\InventoryManager.CustomerSearch.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\TEAM_TWO_GAMES_GUI_001\obj\Debug\InventoryManager.LoginScreen.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\TEAM_TWO_GAMES_GUI_001\obj\Debug\TEAM_TWO_GAMES_GUI_001.Properties.Resources.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\TEAM_TWO_GAMES_GUI_001\obj\Debug\InventoryManager.csproj.GenerateResource.Cache
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\TEAM_TWO_GAMES_GUI_001\bin\Debug\InventoryManager.exe.config
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe.config
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe.config
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\bin\Debug\InventoryManager.pdb
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csprojResolveAssemblyReference.cache
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\obj\Debug\InventoryManager.CustomerSearch.resources
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\obj\Debug\InventoryManager.LoginScreen.resources
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\obj\Debug\InventoryManager.Properties.Resources.resources
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csproj.GenerateResource.Cache
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\obj\Debug\InventoryManager.exe
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\obj\Debug\InventoryManager.pdb
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\bin\Debug\InventoryManager.exe.config
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\obj\Debug\InventoryManager.exe
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\obj\Debug\InventoryManager.pdb
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\bin\Debug\InventoryManager.exe
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\bin\Debug\InventoryManager.pdb
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\obj\Debug\InventoryManager.csprojResolveAssemblyReference.cache
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\obj\Debug\InventoryManager.CustomerSearch.resources
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\obj\Debug\InventoryManager.LoginScreen.resources
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\obj\Debug\InventoryManager.Properties.Resources.resources
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\obj\Debug\InventoryManager.csproj.GenerateResource.Cache
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\obj\Debug\InventoryManager.ManagerScreen.resources
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager.v.01\InventoryManager\obj\Debug\InventoryManager.EmployeeScreen.resources
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe.config
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.pdb
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csprojResolveAssemblyReference.cache
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ManagerScreen.resources
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.EmployeeScreen.resources
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.CustomerSearch.resources
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.LoginScreen.resources
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.Properties.Resources.resources
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csproj.GenerateResource.Cache
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.exe
+C:\Users\Michael\Documents\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.pdb
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.pdb
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csprojResolveAssemblyReference.cache
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ManagerScreen.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.EmployeeScreen.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.CustomerSearch.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.LoginScreen.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.Properties.Resources.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csproj.GenerateResource.Cache
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.exe
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.pdb
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe.config
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.exe
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.pdb
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.pdb
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csprojResolveAssemblyReference.cache
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ManagerScreen.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.EmployeeScreen.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.CustomerSearch.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.LoginScreen.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.Properties.Resources.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csproj.GenerateResource.Cache
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.InventoryManager.resources
+>>>>>>> 7a4ef49430f7347623746b2a95177520f970f960

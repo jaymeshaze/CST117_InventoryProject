@@ -248,6 +248,7 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
+<<<<<<< HEAD
             this.button1.Location = new System.Drawing.Point(235, 57);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 67);
@@ -413,6 +414,15 @@
             this.label9.TabIndex = 6;
             this.label9.Text = "List Store Stock";
             this.label9.Click += new System.EventHandler(this.label9_Click);
+=======
+            this.button1.Location = new System.Drawing.Point(12, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(95, 37);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "Logout";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.logoutClick);
+>>>>>>> 7a4ef49430f7347623746b2a95177520f970f960
             // 
             // EmployeeScreen
             // 
