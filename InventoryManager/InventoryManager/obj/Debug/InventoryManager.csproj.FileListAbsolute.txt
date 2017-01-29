@@ -58,3 +58,5 @@ C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\Inventory
 C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csproj.GenerateResource.Cache
 C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.exe
 C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.pdb
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ManagerScreen.resources
+C:\Users\aaron.fonseca\Documents\Visual Studio 2015\Projects\InventoryManager\InventoryManager\obj\Debug\InventoryManager.EmployeeScreen.resources

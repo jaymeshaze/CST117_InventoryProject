@@ -46,5 +46,75 @@ namespace InventoryManager
         {
 
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            foreach (Control c in this.Controls)
+            {
+                if (c is Panel) c.Visible = false;
+            }
+            panel4.Visible = true;
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginScreen openForm1 = new LoginScreen();
+            openForm1.Show();
+        }
+
+        private void btnStockList_Click(object sender, EventArgs e)
+        {
+
+            foreach (Control c in this.Controls)
+            {
+                if (c is Panel) c.Visible = false;
+            }
+            panel1.Visible = true;
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEditInventory_Click(object sender, EventArgs e)
+        {
+            foreach (Control c in this.Controls)
+            {
+                if (c is Panel) c.Visible = false;
+            }
+            panel2.Visible = true;
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnListInventory_Click(object sender, EventArgs e)
+        {
+            foreach(Control c in this.Controls)
+            {
+                if (c is Panel) c.Visible = false;
+            }
+            panel3.Visible = true;
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
