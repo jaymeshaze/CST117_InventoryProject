@@ -42,12 +42,12 @@
             // 
             this.ProductSearchBox.BackColor = System.Drawing.Color.WhiteSmoke;
             this.ProductSearchBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ProductSearchBox.Font = new System.Drawing.Font("Neuropol", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ProductSearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductSearchBox.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.ProductSearchBox.Location = new System.Drawing.Point(715, 332);
-            this.ProductSearchBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ProductSearchBox.Location = new System.Drawing.Point(536, 270);
+            this.ProductSearchBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProductSearchBox.Name = "ProductSearchBox";
-            this.ProductSearchBox.Size = new System.Drawing.Size(414, 40);
+            this.ProductSearchBox.Size = new System.Drawing.Size(311, 37);
             this.ProductSearchBox.TabIndex = 1;
             this.ProductSearchBox.Text = "Search T2 Products";
             this.ProductSearchBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -62,10 +62,10 @@
             this.ProductSearchBoxButton.FlatAppearance.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.ProductSearchBoxButton.FlatAppearance.BorderSize = 0;
             this.ProductSearchBoxButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ProductSearchBoxButton.Location = new System.Drawing.Point(1131, 329);
+            this.ProductSearchBoxButton.Location = new System.Drawing.Point(848, 267);
             this.ProductSearchBoxButton.Margin = new System.Windows.Forms.Padding(0);
             this.ProductSearchBoxButton.Name = "ProductSearchBoxButton";
-            this.ProductSearchBoxButton.Size = new System.Drawing.Size(55, 46);
+            this.ProductSearchBoxButton.Size = new System.Drawing.Size(41, 37);
             this.ProductSearchBoxButton.TabIndex = 3;
             this.ProductSearchBoxButton.TabStop = false;
             this.ProductSearchBoxButton.UseVisualStyleBackColor = false;
@@ -74,10 +74,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::InventoryManager.Properties.Resources.TTG_LOGO_LOGIN_SCREEN_WIDTH_477PX;
-            this.pictureBox1.Location = new System.Drawing.Point(708, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(531, -2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(648, 395);
+            this.pictureBox1.Size = new System.Drawing.Size(486, 321);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -86,10 +86,10 @@
             this.ProductSearchAllButton.BackColor = System.Drawing.SystemColors.HotTrack;
             this.ProductSearchAllButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ProductSearchAllButton.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.ProductSearchAllButton.Location = new System.Drawing.Point(716, 638);
-            this.ProductSearchAllButton.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ProductSearchAllButton.Location = new System.Drawing.Point(537, 518);
+            this.ProductSearchAllButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProductSearchAllButton.Name = "ProductSearchAllButton";
-            this.ProductSearchAllButton.Size = new System.Drawing.Size(471, 132);
+            this.ProductSearchAllButton.Size = new System.Drawing.Size(353, 107);
             this.ProductSearchAllButton.TabIndex = 4;
             this.ProductSearchAllButton.Text = "SEARCH ALL PRODUCTS";
             this.ProductSearchAllButton.UseVisualStyleBackColor = false;
@@ -100,20 +100,21 @@
             this.or_label.AutoSize = true;
             this.or_label.Font = new System.Drawing.Font("Arial Narrow", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.or_label.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.or_label.Location = new System.Drawing.Point(925, 482);
+            this.or_label.Location = new System.Drawing.Point(694, 392);
+            this.or_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.or_label.Name = "or_label";
-            this.or_label.Size = new System.Drawing.Size(52, 49);
+            this.or_label.Size = new System.Drawing.Size(42, 40);
             this.or_label.TabIndex = 5;
             this.or_label.Text = "or";
             // 
             // btnLogout
             // 
-            this.btnLogout.Font = new System.Drawing.Font("Neuropol", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnLogout.Location = new System.Drawing.Point(1756, 11);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(5);
+            this.btnLogout.Location = new System.Drawing.Point(1249, 13);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(134, 28);
+            this.btnLogout.Size = new System.Drawing.Size(100, 23);
             this.btnLogout.TabIndex = 9;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
@@ -121,10 +122,10 @@
             // 
             // ProductSearch
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1920, 1057);
+            this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.or_label);
             this.Controls.Add(this.ProductSearchAllButton);
@@ -133,7 +134,7 @@
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ProductSearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team 2 Games Product Search";

@@ -56,5 +56,12 @@ namespace InventoryManager
         {
 
         }
+
+        private void returnClick(object sender, EventArgs e)
+        {
+            this.Hide();
+            ManagerScreen screen1 = new ManagerScreen();
+            screen1.Show();
+        }
     }
 }

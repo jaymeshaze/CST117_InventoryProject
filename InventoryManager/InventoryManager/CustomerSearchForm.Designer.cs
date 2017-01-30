@@ -37,13 +37,13 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -56,7 +56,7 @@
             this.CustomerSearchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomerSearchBox.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.CustomerSearchBox.Location = new System.Drawing.Point(536, 270);
-            this.CustomerSearchBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CustomerSearchBox.Margin = new System.Windows.Forms.Padding(2);
             this.CustomerSearchBox.Name = "CustomerSearchBox";
             this.CustomerSearchBox.Size = new System.Drawing.Size(311, 37);
             this.CustomerSearchBox.TabIndex = 1;
@@ -85,7 +85,7 @@
             // 
             this.pictureBox1.Image = global::InventoryManager.Properties.Resources.TTG_LOGO_LOGIN_SCREEN_WIDTH_477PX;
             this.pictureBox1.Location = new System.Drawing.Point(531, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(486, 321);
             this.pictureBox1.TabIndex = 0;
@@ -97,7 +97,7 @@
             this.CustomerSearchAllButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CustomerSearchAllButton.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.CustomerSearchAllButton.Location = new System.Drawing.Point(439, 231);
-            this.CustomerSearchAllButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CustomerSearchAllButton.Margin = new System.Windows.Forms.Padding(2);
             this.CustomerSearchAllButton.Name = "CustomerSearchAllButton";
             this.CustomerSearchAllButton.Size = new System.Drawing.Size(353, 107);
             this.CustomerSearchAllButton.TabIndex = 4;
@@ -121,8 +121,8 @@
             // 
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnLogout.Location = new System.Drawing.Point(1317, 9);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogout.Location = new System.Drawing.Point(1249, 13);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(100, 23);
             this.btnLogout.TabIndex = 9;
@@ -155,6 +155,64 @@
             this.panel2.UseWaitCursor = true;
             this.panel2.Visible = false;
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button2.Location = new System.Drawing.Point(984, 344);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(129, 39);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "Back to Menu";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseWaitCursor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(889, 132);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(312, 37);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Under Construction";
+            this.label2.UseWaitCursor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label8.Location = new System.Drawing.Point(271, 192);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(312, 37);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Under Construction";
+            this.label8.UseWaitCursor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.White;
+            this.textBox2.Location = new System.Drawing.Point(869, 14);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(358, 305);
+            this.textBox2.TabIndex = 7;
+            this.textBox2.UseWaitCursor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Location = new System.Drawing.Point(29, 14);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(834, 461);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.UseWaitCursor = true;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
@@ -182,65 +240,12 @@
             this.label1.Text = "or";
             this.label1.UseWaitCursor = true;
             // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Location = new System.Drawing.Point(29, 14);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(834, 461);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(869, 14);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(358, 305);
-            this.textBox2.TabIndex = 7;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(271, 192);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(312, 37);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Under Construction";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(889, 132);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(312, 37);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Under Construction";
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.Location = new System.Drawing.Point(984, 380);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 39);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Back to Menu";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // CustomerSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1437, 856);
+            this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnLogout);
@@ -249,7 +254,7 @@
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CustomerSearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team 2 Games Customer Search";
