@@ -61,5 +61,12 @@ namespace InventoryManager
         {
             MessageBox.Show("This will sort data by type");
         }
+
+        private void returnClick(object sender, EventArgs e)
+        {
+            this.Hide();
+            Analytics form1 = new Analytics();
+            form1.Show();
+        }
     }
 }

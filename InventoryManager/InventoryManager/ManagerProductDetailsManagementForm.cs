@@ -50,5 +50,12 @@ namespace InventoryManager
         {
             MessageBox.Show("This will sort products by type");
         }
+
+        private void returnClick(object sender, EventArgs e)
+        {
+            this.Hide();
+            InventoryManager form1 = new InventoryManager();
+            form1.Show();
+        }
     }
 }

@@ -49,5 +49,12 @@ namespace InventoryManager
             LoginScreen ss = new LoginScreen();
             ss.Show();
         }
+
+        private void returnClick(object sender, EventArgs e)
+        {
+            this.Hide();
+            InventoryManager form1 = new InventoryManager();
+            form1.Show();
+        }
     }
 }
