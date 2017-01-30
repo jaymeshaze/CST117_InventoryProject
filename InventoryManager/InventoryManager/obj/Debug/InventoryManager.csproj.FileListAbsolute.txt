@@ -76,3 +76,12 @@ C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryMa
 C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ProductSearch.resources
 C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ProductDetailsManager.resources
 C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.StockControl.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.StockStatus.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.StockSearch.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.UploadStock.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.NewItem.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.DetailsUpdate.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.UserManagement.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.AddUser.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.UserSearch.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.UserUpdate.resources

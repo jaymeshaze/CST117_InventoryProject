@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ManagerAddNewItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerAddNewItemForm.Designer.cs">
+      <DependentUpon>ManagerAddNewItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerAddNewUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerAddNewUserForm.Designer.cs">
+      <DependentUpon>ManagerAddNewUserForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerAnalyticDataForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +81,18 @@
     </Compile>
     <Compile Include="ManagerProductDetailSearch.Designer.cs">
       <DependentUpon>ManagerProductDetailSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerProductDetailsUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerProductDetailsUpdateForm.Designer.cs">
+      <DependentUpon>ManagerProductDetailsUpdateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerStockSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerStockSearchForm.Designer.cs">
+      <DependentUpon>ManagerStockSearchForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ManagerScreenFrom.cs">
       <SubType>Form</SubType>
@@ -106,8 +130,44 @@
     <Compile Include="ManagerProductDetailsManagementForm.Designer.cs">
       <DependentUpon>ManagerProductDetailsManagementForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerUploadStockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerUploadStockForm.Designer.cs">
+      <DependentUpon>ManagerUploadStockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUserManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerUserManagementForm.Designer.cs">
+      <DependentUpon>ManagerUserManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUserSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerUserSearchForm.Designer.cs">
+      <DependentUpon>ManagerUserSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagerUserUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerUserUpdateForm.Designer.cs">
+      <DependentUpon>ManagerUserUpdateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ManagerStockStatusForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerStockStatusForm.Designer.cs">
+      <DependentUpon>ManagerStockStatusForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ManagerAddNewItemForm.resx">
+      <DependentUpon>ManagerAddNewItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerAddNewUserForm.resx">
+      <DependentUpon>ManagerAddNewUserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManagerAnalyticDataForm.resx">
       <DependentUpon>ManagerAnalyticDataForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -119,6 +179,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerProductDetailSearch.resx">
       <DependentUpon>ManagerProductDetailSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerProductDetailsUpdateForm.resx">
+      <DependentUpon>ManagerProductDetailsUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerStockSearchForm.resx">
+      <DependentUpon>ManagerStockSearchForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerScreenFrom.resx">
       <DependentUpon>ManagerScreenFrom.cs</DependentUpon>
@@ -138,6 +204,18 @@
     <EmbeddedResource Include="ManagerStockManagementForm.resx">
       <DependentUpon>ManagerStockManagementForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUploadStockForm.resx">
+      <DependentUpon>ManagerUploadStockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUserManagementForm.resx">
+      <DependentUpon>ManagerUserManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerUserSearchForm.resx">
+      <DependentUpon>ManagerUserSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageruserUpdateForm.resx">
+      <DependentUpon>ManagerUserUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -148,6 +226,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ManagerStockStatusForm.resx">
+      <DependentUpon>ManagerStockStatusForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

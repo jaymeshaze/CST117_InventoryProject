@@ -16,7 +16,7 @@ namespace InventoryManager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new InventoryManager());
+            Application.Run(new UserUpdate());
         }
     }
 }

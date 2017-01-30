@@ -10,29 +10,24 @@ using System.Windows.Forms;
 
 namespace InventoryManager
 {
-    public partial class StockControl : Form
+    public partial class UserSearch: Form
     {
-        public StockControl()
+        public UserSearch()
         {
             InitializeComponent();
         }
 
-        private void StockControl_Load(object sender, EventArgs e)
+        private void UserSearch_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnAddNew_Click(object sender, EventArgs e)
+        private void btnAddUser_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void btnUploadNew_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnUpdate_Click(object sender, EventArgs e)
+        private void btnPreviousMenu_Click(object sender, EventArgs e)
         {
 
         }
