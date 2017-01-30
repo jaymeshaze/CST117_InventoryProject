@@ -58,6 +58,12 @@
     <Compile Include="ManagerAddNewUserForm.Designer.cs">
       <DependentUpon>ManagerAddNewUserForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerAllInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerAllInventory.Designer.cs">
+      <DependentUpon>ManagerAllInventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="ManagerAnalyticDataForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerAddNewUserForm.resx">
       <DependentUpon>ManagerAddNewUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagerAllInventory.resx">
+      <DependentUpon>ManagerAllInventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerAnalyticDataForm.resx">
       <DependentUpon>ManagerAnalyticDataForm.cs</DependentUpon>

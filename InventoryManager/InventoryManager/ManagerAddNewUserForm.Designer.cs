@@ -65,6 +65,7 @@
             this.btnAdd.TabIndex = 23;
             this.btnAdd.Text = "Add User";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // AddUser
             // 

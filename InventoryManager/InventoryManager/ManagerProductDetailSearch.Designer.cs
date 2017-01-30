@@ -51,6 +51,7 @@
             this.ProductSearchBox.TabIndex = 1;
             this.ProductSearchBox.Text = "Search T2 Products";
             this.ProductSearchBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ProductSearchBox.TextChanged += new System.EventHandler(this.ProductSearchBox_TextChanged);
             // 
             // ProductSearchBoxButton
             // 
@@ -110,7 +111,7 @@
             this.btnLogout.Font = new System.Drawing.Font("Neuropol", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnLogout.Location = new System.Drawing.Point(1756, 11);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(134, 28);
             this.btnLogout.TabIndex = 9;
@@ -123,7 +124,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.ClientSize = new System.Drawing.Size(1920, 1057);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.or_label);
             this.Controls.Add(this.ProductSearchAllButton);

@@ -19,7 +19,7 @@ namespace InventoryManager
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void NewItem_Load(object sender, EventArgs e)

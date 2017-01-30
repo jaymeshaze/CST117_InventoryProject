@@ -10,45 +10,46 @@ using System.Windows.Forms;
 
 namespace InventoryManager
 {
-    public partial class StockSearch: Form
+    public partial class AllInventory: Form
     {
-        public StockSearch()
+        public AllInventory()
         {
             InitializeComponent();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
             LoginScreen ss = new LoginScreen();
             ss.Show();
         }
 
-        private void StockSearch_Load(object sender, EventArgs e)
+        private void AllInventory_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("When application is live, the user will be able to select an item and it will pop a screen requesting/saving updates");
+
         }
 
         private void btnPreviousMenu_Click(object sender, EventArgs e)
         {
             this.Close();
-            StockControl StockControl = new StockControl();
-            StockControl.Show();
+            InventoryManager InventoryManager = new InventoryManager();
+            InventoryManager.Show();
         }
 
         private void btnByBrand_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This will sort stock by brand");
+            MessageBox.Show("Will sort inventory by brand");
         }
 
         private void btnByItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This will sort stock by item");
+            MessageBox.Show("Will sort inventory by item");
+
         }
 
         private void btnByType_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This will sort stock by type");
+            MessageBox.Show("Will sort inventory by type");
         }
     }
 }

@@ -24,17 +24,21 @@ namespace InventoryManager
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
-
+            
+            AddUser AddUser = new AddUser();
+            AddUser.Show();
         }
 
         private void btnManageUsers_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            UserSearch UserSearch = new UserSearch();
+            UserSearch.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             LoginScreen ss = new LoginScreen();
             ss.Show();
         }

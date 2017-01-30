@@ -19,34 +19,36 @@ namespace InventoryManager
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             LoginScreen ss = new LoginScreen();
             ss.Show();
         }
 
         private void ProductDetailsManager_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show("When application is live, the user will be able to select an item and it will pop a screen requesting/saving updates");
         }
 
         private void btnPreviousMenu_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            ProductSearch ProductSearch = new ProductSearch();
+            ProductSearch.Show();
         }
 
         private void btnByBrand_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("This will sort products by brand");
         }
 
         private void btnByItem_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("This will sort products by item");
         }
 
         private void btnByType_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("This will sort products by type");
         }
     }
 }

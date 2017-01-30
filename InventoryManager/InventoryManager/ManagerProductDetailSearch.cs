@@ -19,12 +19,16 @@ namespace InventoryManager
 
         private void ProductSearchBoxButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            ProductDetailsManager ProductDetailsManager = new ProductDetailsManager();
+            ProductDetailsManager.Show();
         }
 
         private void ProductSearchAllButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            ProductDetailsManager ProductDetailsManager = new ProductDetailsManager();
+            ProductDetailsManager.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -34,9 +38,15 @@ namespace InventoryManager
             ss.Show();
         }
 
+        private void ProductSearchBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
         private void ProductSearch_Load(object sender, EventArgs e)
         {
 
         }
+
     }
 }

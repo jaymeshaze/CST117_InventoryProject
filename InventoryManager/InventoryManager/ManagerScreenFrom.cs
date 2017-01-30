@@ -45,12 +45,16 @@ namespace InventoryManager
 
         private void manageUsersEvent(object sender, EventArgs e)
         {
-            MessageBox.Show("This is where User Data is managed.");
+            this.Hide();
+            UserManagement UserManagement  = new UserManagement();
+            UserManagement.Show();
         }
 
-        private void inventoryDisplayEvent(object sender, EventArgs e)
+        private void btnInventoryManagement_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This retrieves the List of store inventory.");
+            this.Hide();
+            InventoryManager InventoryManagement = new InventoryManager();
+            InventoryManagement.Show();
         }
 
         private void inventoryOptimizationEvent(object sender, EventArgs e)

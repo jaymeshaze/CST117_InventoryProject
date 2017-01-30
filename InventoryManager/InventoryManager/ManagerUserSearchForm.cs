@@ -19,22 +19,19 @@ namespace InventoryManager
 
         private void UserSearch_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnAddUser_Click(object sender, EventArgs e)
-        {
-
+            MessageBox.Show("When application is live this will show list of all employees with access to the application, they will then be able to select a user and pop a user update form requesting/saving updates");
         }
 
         private void btnPreviousMenu_Click(object sender, EventArgs e)
         {
-
+            this.Close();
+            UserManagement UserManagement = new UserManagement();
+            UserManagement.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             LoginScreen ss = new LoginScreen();
             ss.Show();
         }

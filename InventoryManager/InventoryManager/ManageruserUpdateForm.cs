@@ -24,7 +24,7 @@ namespace InventoryManager
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void UserUpdate_Load(object sender, EventArgs e)

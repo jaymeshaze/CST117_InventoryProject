@@ -24,7 +24,7 @@ namespace InventoryManager
 
         private void btnUpload_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void btnBrowse_Click(object sender, EventArgs e)

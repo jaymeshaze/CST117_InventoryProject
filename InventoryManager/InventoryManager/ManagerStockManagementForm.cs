@@ -24,22 +24,26 @@ namespace InventoryManager
 
         private void btnAddNew_Click(object sender, EventArgs e)
         {
-
+            NewItem NewItem = new NewItem();
+            NewItem.Show();
         }
 
         private void btnUploadNew_Click(object sender, EventArgs e)
         {
-
+            UploadStock UploadStock = new UploadStock();
+            UploadStock.Show();
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            StockSearch StockSearch = new StockSearch();
+            StockSearch.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             LoginScreen ss = new LoginScreen();
             ss.Show();
         }

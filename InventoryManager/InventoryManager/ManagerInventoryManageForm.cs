@@ -26,22 +26,30 @@ namespace InventoryManager
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            AllInventory AllInventory = new AllInventory();
+            AllInventory.Show();
         }
 
         private void btnAnalytics_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Analytics Analytics = new Analytics();
+            Analytics.Show();
         }
 
         private void btnManageDetails_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            ProductSearch ProductSearch = new ProductSearch();
+            ProductSearch.Show();
         }
 
         private void btnManageStock_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            StockControl StockControl = new StockControl();
+            StockControl.Show();
         }
 
         private void InventoryManager_Load(object sender, EventArgs e)

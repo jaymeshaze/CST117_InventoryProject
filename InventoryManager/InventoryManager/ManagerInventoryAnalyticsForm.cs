@@ -24,22 +24,28 @@ namespace InventoryManager
 
         private void btnPopular_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            AnalyticData AnalyticData = new AnalyticData();
+            AnalyticData.Show();
         }
 
         private void btnHighSellers_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            AnalyticData AnalyticData = new AnalyticData();
+            AnalyticData.Show();
         }
 
         private void btnLowSellers_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            AnalyticData AnalyticData = new AnalyticData();
+            AnalyticData.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             LoginScreen ss = new LoginScreen();
             ss.Show();
         }

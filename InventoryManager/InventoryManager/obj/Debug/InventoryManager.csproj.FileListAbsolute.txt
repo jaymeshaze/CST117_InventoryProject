@@ -85,3 +85,4 @@ C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryMa
 C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.AddUser.resources
 C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.UserSearch.resources
 C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.UserUpdate.resources
+C:\Users\Brian\Source\Repos\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.AllInventory.resources
