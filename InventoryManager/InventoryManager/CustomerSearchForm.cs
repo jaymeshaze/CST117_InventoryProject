@@ -19,12 +19,20 @@ namespace InventoryManager
 
         private void CUST_SRCH_ALL_Click(object sender, EventArgs e)
         {
-
+            foreach (Control c in this.Controls)
+            {
+                if (c is Panel) c.Visible = false;
+            }
+            panel2.Visible = true;
         }
 
         private void CUST_SRCH_BOX_Click(object sender, EventArgs e)
         {
-
+            foreach (Control c in this.Controls)
+            {
+                if (c is Panel) c.Visible = false;
+            }
+            panel2.Visible = true;
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -37,6 +45,20 @@ namespace InventoryManager
         private void CustomerSearch_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            foreach (Control c in this.Controls)
+            {
+                if (c is Panel) c.Visible = false;
+            }
+            panel1.Visible = true;
         }
     }
 }
