@@ -51,7 +51,7 @@ namespace InventoryManager
 
         private void LoginScreen_Load(object sender, EventArgs e)
         {
-      
+            MessageBox.Show("the Password will not change, but you will need to enter one of 3 usernames, each taking you to a different instance of the application:  Guest, Employee, Manager...case sensitive");
         }
 
         private void label3_Click(object sender, EventArgs e)
