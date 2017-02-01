@@ -50,5 +50,12 @@ namespace InventoryManager
         {
             MessageBox.Show("This will sort stock by type");
         }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StockControl form1 = new StockControl();
+            form1.Show();
+        }
     }
 }

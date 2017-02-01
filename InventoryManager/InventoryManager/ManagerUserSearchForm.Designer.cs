@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserSearch));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnReturn = new System.Windows.Forms.Button();
             this.viewUserList = new System.Windows.Forms.DataGridView();
             this.btnPreviousMenu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -41,29 +41,30 @@
             // 
             this.pictureBox1.Image = global::InventoryManager.Properties.Resources.TTG_LOGO_LOGIN_SCREEN_WIDTH_477PX;
             this.pictureBox1.Location = new System.Drawing.Point(531, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(486, 321);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnLogout
+            // btnReturn
             // 
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnLogout.Location = new System.Drawing.Point(1250, 12);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(100, 23);
-            this.btnLogout.TabIndex = 9;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.UseVisualStyleBackColor = true;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            this.btnReturn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReturn.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnReturn.Location = new System.Drawing.Point(1254, 12);
+            this.btnReturn.Name = "btnReturn";
+            this.btnReturn.Size = new System.Drawing.Size(96, 36);
+            this.btnReturn.TabIndex = 9;
+            this.btnReturn.Text = "Return";
+            this.btnReturn.UseVisualStyleBackColor = false;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // viewUserList
             // 
             this.viewUserList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.viewUserList.Location = new System.Drawing.Point(346, 197);
-            this.viewUserList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.viewUserList.Margin = new System.Windows.Forms.Padding(2);
             this.viewUserList.Name = "viewUserList";
             this.viewUserList.RowTemplate.Height = 24;
             this.viewUserList.Size = new System.Drawing.Size(750, 569);
@@ -89,11 +90,11 @@
             this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.btnPreviousMenu);
             this.Controls.Add(this.viewUserList);
-            this.Controls.Add(this.btnLogout);
+            this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserSearch";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team 2 Games Users";
@@ -108,7 +109,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnReturn;
         private System.Windows.Forms.DataGridView viewUserList;
         private System.Windows.Forms.Button btnPreviousMenu;
     }

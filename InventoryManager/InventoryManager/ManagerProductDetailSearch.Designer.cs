@@ -34,7 +34,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ProductSearchAllButton = new System.Windows.Forms.Button();
             this.or_label = new System.Windows.Forms.Label();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -108,25 +107,11 @@
             this.or_label.TabIndex = 5;
             this.or_label.Text = "or";
             // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnLogout.Location = new System.Drawing.Point(1249, 13);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(96, 36);
-            this.btnLogout.TabIndex = 9;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(1146, 12);
+            this.button1.Location = new System.Drawing.Point(1254, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 36);
             this.button1.TabIndex = 10;
@@ -141,7 +126,6 @@
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.or_label);
             this.Controls.Add(this.ProductSearchAllButton);
             this.Controls.Add(this.ProductSearchBoxButton);
@@ -168,7 +152,6 @@
         private System.Windows.Forms.Button ProductSearchBoxButton;
         private System.Windows.Forms.Button ProductSearchAllButton;
         private System.Windows.Forms.Label or_label;
-        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button button1;
     }
 }

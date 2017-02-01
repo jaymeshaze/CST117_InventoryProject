@@ -43,12 +43,7 @@ namespace InventoryManager
             AnalyticData.Show();
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            LoginScreen ss = new LoginScreen();
-            ss.Show();
-        }
+        
 
         private void returnClick(object sender, EventArgs e)
         {

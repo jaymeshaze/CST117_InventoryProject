@@ -17,12 +17,7 @@ namespace InventoryManager
             InitializeComponent();
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            LoginScreen ss = new LoginScreen();
-            ss.Show();
-        }
+        
 
         private void AnalyticData_Load(object sender, EventArgs e)
         {

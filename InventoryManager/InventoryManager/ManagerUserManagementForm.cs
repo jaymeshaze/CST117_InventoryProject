@@ -42,5 +42,12 @@ namespace InventoryManager
             LoginScreen ss = new LoginScreen();
             ss.Show();
         }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ManagerScreen ss = new ManagerScreen();
+            ss.Show();
+        }
     }
 }

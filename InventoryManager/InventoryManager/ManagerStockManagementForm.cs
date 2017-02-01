@@ -41,11 +41,13 @@ namespace InventoryManager
             StockSearch.Show();
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
+        
+
+        private void btnReturn_Click(object sender, EventArgs e)
         {
             this.Close();
-            LoginScreen ss = new LoginScreen();
-            ss.Show();
+            InventoryManager form1 = new InventoryManager();
+            form1.Show();
         }
     }
 }

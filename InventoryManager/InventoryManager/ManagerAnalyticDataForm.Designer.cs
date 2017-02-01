@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnalyticData));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnLogout = new System.Windows.Forms.Button();
             this.viewInventoryData = new System.Windows.Forms.DataGridView();
             this.btnByBrand = new System.Windows.Forms.Button();
             this.btnByType = new System.Windows.Forms.Button();
@@ -52,19 +51,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(486, 321);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnLogout.Location = new System.Drawing.Point(1250, 12);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(96, 36);
-            this.btnLogout.TabIndex = 9;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.UseVisualStyleBackColor = false;
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // viewInventoryData
             // 
@@ -152,7 +138,7 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(1148, 12);
+            this.button1.Location = new System.Drawing.Point(1254, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 36);
             this.button1.TabIndex = 17;
@@ -174,7 +160,6 @@
             this.Controls.Add(this.btnByType);
             this.Controls.Add(this.btnByBrand);
             this.Controls.Add(this.viewInventoryData);
-            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -193,7 +178,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.DataGridView viewInventoryData;
         private System.Windows.Forms.Button btnByBrand;
         private System.Windows.Forms.Button btnByType;
