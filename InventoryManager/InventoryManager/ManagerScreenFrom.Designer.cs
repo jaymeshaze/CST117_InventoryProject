@@ -36,8 +36,6 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnUserManagement = new System.Windows.Forms.Button();
             this.btnInventoryManagement = new System.Windows.Forms.Button();
-            this.btnInventoryOptimization = new System.Windows.Forms.Button();
-            this.btnInventoryOrdering = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -131,38 +129,12 @@
             this.btnInventoryManagement.UseVisualStyleBackColor = false;
             this.btnInventoryManagement.Click += new System.EventHandler(this.btnInventoryManagement_Click);
             // 
-            // btnInventoryOptimization
-            // 
-            this.btnInventoryOptimization.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnInventoryOptimization.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnInventoryOptimization.Location = new System.Drawing.Point(472, 404);
-            this.btnInventoryOptimization.Name = "btnInventoryOptimization";
-            this.btnInventoryOptimization.Size = new System.Drawing.Size(229, 88);
-            this.btnInventoryOptimization.TabIndex = 11;
-            this.btnInventoryOptimization.Text = "Inventory Optimization";
-            this.btnInventoryOptimization.UseVisualStyleBackColor = false;
-            this.btnInventoryOptimization.Click += new System.EventHandler(this.inventoryOptimizationEvent);
-            // 
-            // btnInventoryOrdering
-            // 
-            this.btnInventoryOrdering.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnInventoryOrdering.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnInventoryOrdering.Location = new System.Drawing.Point(736, 404);
-            this.btnInventoryOrdering.Name = "btnInventoryOrdering";
-            this.btnInventoryOrdering.Size = new System.Drawing.Size(229, 88);
-            this.btnInventoryOrdering.TabIndex = 12;
-            this.btnInventoryOrdering.Text = "Inventory Ordering";
-            this.btnInventoryOrdering.UseVisualStyleBackColor = false;
-            this.btnInventoryOrdering.Click += new System.EventHandler(this.inventoryOrderEvent);
-            // 
             // ManagerScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1362, 741);
-            this.Controls.Add(this.btnInventoryOrdering);
-            this.Controls.Add(this.btnInventoryOptimization);
             this.Controls.Add(this.btnInventoryManagement);
             this.Controls.Add(this.btnUserManagement);
             this.Controls.Add(this.btnLogout);
@@ -193,7 +165,5 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnUserManagement;
         private System.Windows.Forms.Button btnInventoryManagement;
-        private System.Windows.Forms.Button btnInventoryOptimization;
-        private System.Windows.Forms.Button btnInventoryOrdering;
     }
 }

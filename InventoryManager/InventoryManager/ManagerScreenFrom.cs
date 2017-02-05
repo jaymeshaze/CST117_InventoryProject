@@ -57,14 +57,8 @@ namespace InventoryManager
             InventoryManagement.Show();
         }
 
-        private void inventoryOptimizationEvent(object sender, EventArgs e)
-        {
-            MessageBox.Show("This Optomizes the Inventory.");
-        }
+        
 
-        private void inventoryOrderEvent(object sender, EventArgs e)
-        {
-            MessageBox.Show("This Orders new Inventory.");
-        }
+        
     }
 }
