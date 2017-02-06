@@ -20,6 +20,16 @@ namespace InventoryManager
         private void CUSTOMER_SEARCH_Load(object sender, EventArgs e)
         {
 
+            try
+            {
+                string search = CustomerSearchBox.Text;
+            }
+            catch (Exception )
+            {
+                MessageBox.Show("Invalid Search");
+                return;
+            }
+
         }
 
         
