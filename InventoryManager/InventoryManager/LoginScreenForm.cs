@@ -12,10 +12,38 @@ namespace InventoryManager
 {
     public partial class LoginScreen : Form
     {
+
         public LoginScreen()
         {
             InitializeComponent();
         }
+
+        private void UsernameTextField_Leave(object sender, EventArgs e)
+        {
+
+            if (UsernameTextField.Text == "")
+            {
+                UsernameTextField.Text = "username";
+            }
+        }
+
+        private void UsernameTextField_Enter(object sender, EventArgs e)
+        {
+            if (UsernameTextField.Text == "username")
+            {
+                UsernameTextField.Text = "";
+            }
+        }
+
+        private void UsernameTextField_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                LOGIN_BUTTON_Click(this, new EventArgs());
+            }
+        }
+
+
 
         private void LOGIN_BUTTON_Click(object sender, EventArgs e)
         {
@@ -39,6 +67,7 @@ namespace InventoryManager
                     openForm3.Show();
                     break;
                 default:
+                    MessageBox.Show("Incorrect Username: Please enter one of the flowwing Guest, Employee, Manager...case sensitive");
                     break;
             }
 
@@ -55,6 +84,11 @@ namespace InventoryManager
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UsernameTextField_TextChanged(object sender, EventArgs e)
         {
 
         }
