@@ -67,7 +67,7 @@ namespace InventoryManager
                     openForm3.Show();
                     break;
                 default:
-                    MessageBox.Show("Incorrect Username: Please enter one of the flowwing Guest, Employee, Manager...case sensitive");
+                    MessageBox.Show("Incorrect Username: Please enter one of the following Guest, Employee, Manager...case sensitive");
                     break;
             }
 
