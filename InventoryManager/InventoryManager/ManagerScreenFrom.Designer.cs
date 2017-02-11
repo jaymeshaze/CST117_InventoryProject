@@ -159,11 +159,11 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox CustomerSearchBox;
         private System.Windows.Forms.Button CustomerSearchBoxButton;
         private System.Windows.Forms.Label Header;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnUserManagement;
         private System.Windows.Forms.Button btnInventoryManagement;
+        public System.Windows.Forms.TextBox CustomerSearchBox;
     }
 }
