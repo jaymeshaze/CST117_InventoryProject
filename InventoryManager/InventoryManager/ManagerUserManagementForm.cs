@@ -24,7 +24,6 @@ namespace InventoryManager
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
-            
             AddUser AddUser = new AddUser();
             AddUser.Show();
         }
@@ -32,21 +31,14 @@ namespace InventoryManager
         private void btnManageUsers_Click(object sender, EventArgs e)
         {
             this.Hide();
-            UserSearch UserSearch = new UserSearch();
-            UserSearch.Show();
+            UpdateUser UpdateUser = new UpdateUser();
+            UpdateUser.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Close();
             LoginScreen ss = new LoginScreen();
-            ss.Show();
-        }
-
-        private void btnReturn_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            ManagerScreen ss = new ManagerScreen();
             ss.Show();
         }
     }

@@ -130,3 +130,7 @@ C:\Users\aaron.fonseca\Documents\Visual Studio 2015\CST117_team\InventoryManager
 C:\Users\aaron.fonseca\Documents\Visual Studio 2015\CST117_team\InventoryManager\InventoryManager\obj\Debug\InventoryManager.Properties.Resources.resources
 C:\Users\aaron.fonseca\Documents\Visual Studio 2015\CST117_team\InventoryManager\InventoryManager\obj\Debug\InventoryManager.StockStatus.resources
 C:\Users\aaron.fonseca\Documents\Visual Studio 2015\CST117_team\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csproj.GenerateResource.Cache
+C:\Users\Brian\Source\Repos\CST117_WEEK_5\CST_T2G_INVENTORY_MANAGEMENT_APP\2-9-2017\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe.config
+C:\Users\Brian\Source\Repos\CST117_WEEK_5\CST_T2G_INVENTORY_MANAGEMENT_APP\2-9-2017\InventoryManager\InventoryManager\obj\Debug\InventoryManager.exe
+C:\Users\Brian\Source\Repos\CST117_WEEK_5\CST_T2G_INVENTORY_MANAGEMENT_APP\2-9-2017\InventoryManager\InventoryManager\obj\Debug\InventoryManager.pdb
+C:\Users\Brian\Source\Repos\CST117_WEEK_5\CST_T2G_INVENTORY_MANAGEMENT_APP\2-9-2017\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csprojResolveAssemblyReference.cache
