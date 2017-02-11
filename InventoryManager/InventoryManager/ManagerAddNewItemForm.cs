@@ -27,22 +27,7 @@ namespace InventoryManager
 
         }
 
-        private void txtbx_fName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtbx_lName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtbx_Username_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtbx_Password_TextChanged(object sender, EventArgs e)
+        private void txtbxTitle_TextChanged(object sender, EventArgs e)
         {
 
         }
