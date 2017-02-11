@@ -23,6 +23,7 @@ namespace InventoryManager
         {
             this.Hide();
             AllInventory AllInventory = new AllInventory();
+            AllInventory.searchquery = "*";
             AllInventory.Show();
         }
 

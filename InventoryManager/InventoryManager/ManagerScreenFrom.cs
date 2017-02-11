@@ -31,12 +31,11 @@ namespace InventoryManager
             }
 
         }
-
-        
-
-        private void CUST_SRCH_BOX_Click(object sender, EventArgs e)
+        public void CUST_SRCH_BOX_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This searches the store inventory and displays the desired item.");
+            AllInventory s = new AllInventory();
+            s.searchquery = CustomerSearchBox.Text;
+            s.Show();
         }
 
         

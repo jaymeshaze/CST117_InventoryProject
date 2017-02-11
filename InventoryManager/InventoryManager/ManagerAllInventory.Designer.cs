@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllInventory));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.viewAllInventory = new System.Windows.Forms.DataGridView();
             this.btnByBrand = new System.Windows.Forms.Button();
             this.btnByType = new System.Windows.Forms.Button();
             this.btnByItem = new System.Windows.Forms.Button();
             this.btnPreviousMenu = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.viewAllInventory = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewAllInventory)).BeginInit();
             this.SuspendLayout();
@@ -49,16 +49,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(486, 321);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // viewAllInventory
-            // 
-            this.viewAllInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.viewAllInventory.Location = new System.Drawing.Point(346, 197);
-            this.viewAllInventory.Margin = new System.Windows.Forms.Padding(2);
-            this.viewAllInventory.Name = "viewAllInventory";
-            this.viewAllInventory.RowTemplate.Height = 24;
-            this.viewAllInventory.Size = new System.Drawing.Size(750, 569);
-            this.viewAllInventory.TabIndex = 10;
             // 
             // btnByBrand
             // 
@@ -120,6 +110,16 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.returnClick);
             // 
+            // viewAllInventory
+            // 
+            this.viewAllInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.viewAllInventory.Location = new System.Drawing.Point(346, 197);
+            this.viewAllInventory.Margin = new System.Windows.Forms.Padding(2);
+            this.viewAllInventory.Name = "viewAllInventory";
+            this.viewAllInventory.RowTemplate.Height = 24;
+            this.viewAllInventory.Size = new System.Drawing.Size(750, 569);
+            this.viewAllInventory.TabIndex = 10;
+            // 
             // AllInventory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -150,11 +150,11 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DataGridView viewAllInventory;
         private System.Windows.Forms.Button btnByBrand;
         private System.Windows.Forms.Button btnByType;
         private System.Windows.Forms.Button btnByItem;
         private System.Windows.Forms.Button btnPreviousMenu;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView viewAllInventory;
     }
 }
