@@ -59,10 +59,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::InventoryManager.Properties.Resources.TTG_LOGO_LOGIN_SCREEN_WIDTH_477PX;
-            this.pictureBox1.Location = new System.Drawing.Point(708, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(531, -2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(648, 395);
+            this.pictureBox1.Size = new System.Drawing.Size(486, 321);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -70,10 +70,9 @@
             // 
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnLogout.Location = new System.Drawing.Point(1667, 15);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
+            this.btnLogout.Location = new System.Drawing.Point(1250, 12);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(133, 28);
+            this.btnLogout.Size = new System.Drawing.Size(100, 23);
             this.btnLogout.TabIndex = 9;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
@@ -107,7 +106,8 @@
             this.viewUserList.EnableHeadersVisualStyles = false;
             this.viewUserList.GridColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.viewUserList.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.viewUserList.Location = new System.Drawing.Point(627, 386);
+            this.viewUserList.Location = new System.Drawing.Point(470, 314);
+            this.viewUserList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.viewUserList.MultiSelect = false;
             this.viewUserList.Name = "viewUserList";
             this.viewUserList.RowHeadersVisible = false;
@@ -120,7 +120,7 @@
             this.viewUserList.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.viewUserList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.viewUserList.ShowEditingIcon = false;
-            this.viewUserList.Size = new System.Drawing.Size(1000, 300);
+            this.viewUserList.Size = new System.Drawing.Size(750, 244);
             this.viewUserList.TabIndex = 15;
             this.viewUserList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewUserList_CellContentClick);
             // 
@@ -128,10 +128,9 @@
             // 
             this.btnPreviousMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPreviousMenu.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnPreviousMenu.Location = new System.Drawing.Point(1289, 949);
-            this.btnPreviousMenu.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPreviousMenu.Location = new System.Drawing.Point(967, 771);
             this.btnPreviousMenu.Name = "btnPreviousMenu";
-            this.btnPreviousMenu.Size = new System.Drawing.Size(173, 28);
+            this.btnPreviousMenu.Size = new System.Drawing.Size(130, 23);
             this.btnPreviousMenu.TabIndex = 14;
             this.btnPreviousMenu.Text = "Previous Menu";
             this.btnPreviousMenu.UseVisualStyleBackColor = true;
@@ -142,27 +141,30 @@
             this.lbl_FName.AutoSize = true;
             this.lbl_FName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_FName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_FName.Location = new System.Drawing.Point(294, 361);
+            this.lbl_FName.Location = new System.Drawing.Point(220, 293);
+            this.lbl_FName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_FName.Name = "lbl_FName";
-            this.lbl_FName.Size = new System.Drawing.Size(112, 25);
+            this.lbl_FName.Size = new System.Drawing.Size(90, 20);
             this.lbl_FName.TabIndex = 22;
             this.lbl_FName.Text = "First Name:";
             // 
             // txtbx_fName
             // 
             this.txtbx_fName.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_fName.Location = new System.Drawing.Point(299, 389);
+            this.txtbx_fName.Location = new System.Drawing.Point(224, 316);
+            this.txtbx_fName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtbx_fName.Name = "txtbx_fName";
-            this.txtbx_fName.Size = new System.Drawing.Size(262, 32);
+            this.txtbx_fName.Size = new System.Drawing.Size(198, 27);
             this.txtbx_fName.TabIndex = 23;
             this.txtbx_fName.TextChanged += new System.EventHandler(this.txtbx_fName_TextChanged);
             // 
             // txtbx_lName
             // 
             this.txtbx_lName.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_lName.Location = new System.Drawing.Point(299, 461);
+            this.txtbx_lName.Location = new System.Drawing.Point(224, 375);
+            this.txtbx_lName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtbx_lName.Name = "txtbx_lName";
-            this.txtbx_lName.Size = new System.Drawing.Size(262, 32);
+            this.txtbx_lName.Size = new System.Drawing.Size(198, 27);
             this.txtbx_lName.TabIndex = 25;
             this.txtbx_lName.TextChanged += new System.EventHandler(this.txtbx_lName_TextChanged);
             // 
@@ -171,9 +173,10 @@
             this.lbl_LName.AutoSize = true;
             this.lbl_LName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_LName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_LName.Location = new System.Drawing.Point(294, 433);
+            this.lbl_LName.Location = new System.Drawing.Point(220, 352);
+            this.lbl_LName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_LName.Name = "lbl_LName";
-            this.lbl_LName.Size = new System.Drawing.Size(112, 25);
+            this.lbl_LName.Size = new System.Drawing.Size(90, 20);
             this.lbl_LName.TabIndex = 24;
             this.lbl_LName.Text = "Last Name:";
             // 
@@ -187,9 +190,10 @@
             "Manager",
             "Associate",
             "Guest"});
-            this.comboBox_Title.Location = new System.Drawing.Point(299, 533);
+            this.comboBox_Title.Location = new System.Drawing.Point(224, 433);
+            this.comboBox_Title.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox_Title.Name = "comboBox_Title";
-            this.comboBox_Title.Size = new System.Drawing.Size(262, 31);
+            this.comboBox_Title.Size = new System.Drawing.Size(198, 26);
             this.comboBox_Title.TabIndex = 27;
             this.comboBox_Title.SelectedIndexChanged += new System.EventHandler(this.comboBox_Title_SelectedIndexChanged);
             // 
@@ -198,18 +202,20 @@
             this.lbl_Title.AutoSize = true;
             this.lbl_Title.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Title.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_Title.Location = new System.Drawing.Point(294, 505);
+            this.lbl_Title.Location = new System.Drawing.Point(220, 410);
+            this.lbl_Title.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Title.Name = "lbl_Title";
-            this.lbl_Title.Size = new System.Drawing.Size(161, 25);
+            this.lbl_Title.Size = new System.Drawing.Size(129, 20);
             this.lbl_Title.TabIndex = 26;
             this.lbl_Title.Text = "Select User Title:";
             // 
             // txtbx_Username
             // 
             this.txtbx_Username.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_Username.Location = new System.Drawing.Point(299, 603);
+            this.txtbx_Username.Location = new System.Drawing.Point(224, 490);
+            this.txtbx_Username.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtbx_Username.Name = "txtbx_Username";
-            this.txtbx_Username.Size = new System.Drawing.Size(262, 32);
+            this.txtbx_Username.Size = new System.Drawing.Size(198, 27);
             this.txtbx_Username.TabIndex = 29;
             this.txtbx_Username.TextChanged += new System.EventHandler(this.txtbx_Username_TextChanged);
             // 
@@ -218,18 +224,20 @@
             this.lbl_Username.AutoSize = true;
             this.lbl_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Username.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_Username.Location = new System.Drawing.Point(294, 575);
+            this.lbl_Username.Location = new System.Drawing.Point(220, 467);
+            this.lbl_Username.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Username.Name = "lbl_Username";
-            this.lbl_Username.Size = new System.Drawing.Size(108, 25);
+            this.lbl_Username.Size = new System.Drawing.Size(87, 20);
             this.lbl_Username.TabIndex = 28;
             this.lbl_Username.Text = "Username:";
             // 
             // txtbx_Password
             // 
             this.txtbx_Password.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_Password.Location = new System.Drawing.Point(299, 676);
+            this.txtbx_Password.Location = new System.Drawing.Point(224, 549);
+            this.txtbx_Password.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtbx_Password.Name = "txtbx_Password";
-            this.txtbx_Password.Size = new System.Drawing.Size(262, 32);
+            this.txtbx_Password.Size = new System.Drawing.Size(198, 27);
             this.txtbx_Password.TabIndex = 31;
             this.txtbx_Password.TextChanged += new System.EventHandler(this.txtbx_Password_TextChanged);
             // 
@@ -238,20 +246,20 @@
             this.lbl_Password.AutoSize = true;
             this.lbl_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Password.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_Password.Location = new System.Drawing.Point(294, 648);
+            this.lbl_Password.Location = new System.Drawing.Point(220, 526);
+            this.lbl_Password.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Password.Name = "lbl_Password";
-            this.lbl_Password.Size = new System.Drawing.Size(104, 25);
+            this.lbl_Password.Size = new System.Drawing.Size(82, 20);
             this.lbl_Password.TabIndex = 30;
             this.lbl_Password.Text = "Password:";
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Font = new System.Drawing.Font("Neuropol", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdate.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnUpdate.Location = new System.Drawing.Point(344, 739);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Location = new System.Drawing.Point(258, 600);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(173, 28);
+            this.btnUpdate.Size = new System.Drawing.Size(130, 23);
             this.btnUpdate.TabIndex = 32;
             this.btnUpdate.Text = "Update User";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -264,21 +272,22 @@
             this.grpbx_UpdateUser.Controls.Add(this.lbl_EmployeeID);
             this.grpbx_UpdateUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpbx_UpdateUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.grpbx_UpdateUser.Location = new System.Drawing.Point(250, 255);
+            this.grpbx_UpdateUser.Location = new System.Drawing.Point(188, 207);
+            this.grpbx_UpdateUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpbx_UpdateUser.Name = "grpbx_UpdateUser";
-            this.grpbx_UpdateUser.Size = new System.Drawing.Size(359, 578);
+            this.grpbx_UpdateUser.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpbx_UpdateUser.Size = new System.Drawing.Size(269, 470);
             this.grpbx_UpdateUser.TabIndex = 33;
             this.grpbx_UpdateUser.TabStop = false;
             this.grpbx_UpdateUser.Text = "Update User";
             // 
             // btnDeleteUser
             // 
-            this.btnDeleteUser.Font = new System.Drawing.Font("Neuropol", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeleteUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDeleteUser.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnDeleteUser.Location = new System.Drawing.Point(94, 523);
-            this.btnDeleteUser.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDeleteUser.Location = new System.Drawing.Point(70, 425);
             this.btnDeleteUser.Name = "btnDeleteUser";
-            this.btnDeleteUser.Size = new System.Drawing.Size(173, 28);
+            this.btnDeleteUser.Size = new System.Drawing.Size(130, 23);
             this.btnDeleteUser.TabIndex = 34;
             this.btnDeleteUser.Text = "Delete User";
             this.btnDeleteUser.UseVisualStyleBackColor = true;
@@ -290,9 +299,10 @@
             this.lbl_EmpID.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.lbl_EmpID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_EmpID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbl_EmpID.Location = new System.Drawing.Point(47, 71);
+            this.lbl_EmpID.Location = new System.Drawing.Point(35, 58);
+            this.lbl_EmpID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_EmpID.Name = "lbl_EmpID";
-            this.lbl_EmpID.Size = new System.Drawing.Size(0, 25);
+            this.lbl_EmpID.Size = new System.Drawing.Size(0, 20);
             this.lbl_EmpID.TabIndex = 36;
             // 
             // lbl_EmployeeID
@@ -300,18 +310,19 @@
             this.lbl_EmployeeID.AutoSize = true;
             this.lbl_EmployeeID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_EmployeeID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbl_EmployeeID.Location = new System.Drawing.Point(44, 40);
+            this.lbl_EmployeeID.Location = new System.Drawing.Point(33, 32);
+            this.lbl_EmployeeID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_EmployeeID.Name = "lbl_EmployeeID";
-            this.lbl_EmployeeID.Size = new System.Drawing.Size(129, 25);
+            this.lbl_EmployeeID.Size = new System.Drawing.Size(104, 20);
             this.lbl_EmployeeID.TabIndex = 34;
             this.lbl_EmployeeID.Text = "Employee ID:";
             // 
             // UpdateUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1902, 1035);
+            this.ClientSize = new System.Drawing.Size(1342, 741);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.txtbx_Password);
             this.Controls.Add(this.lbl_Password);
@@ -330,7 +341,7 @@
             this.Controls.Add(this.grpbx_UpdateUser);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UpdateUser";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team 2 Games User Update";

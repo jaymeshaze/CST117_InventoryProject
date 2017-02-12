@@ -72,6 +72,7 @@
             this.viewStock.RowTemplate.Height = 24;
             this.viewStock.Size = new System.Drawing.Size(750, 569);
             this.viewStock.TabIndex = 10;
+            this.viewStock.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewStock_CellContentClick);
             // 
             // btnByBrand
             // 
@@ -152,10 +153,10 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnReturn;
-        private System.Windows.Forms.DataGridView viewStock;
         private System.Windows.Forms.Button btnByBrand;
         private System.Windows.Forms.Button btnByType;
         private System.Windows.Forms.Button btnByItem;
         private System.Windows.Forms.Button btnPreviousMenu;
+        public System.Windows.Forms.DataGridView viewStock;
     }
 }

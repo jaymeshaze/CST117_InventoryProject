@@ -21,6 +21,7 @@ namespace InventoryManager
         {
             this.Hide();
             ProductDetailsManager ProductDetailsManager = new ProductDetailsManager();
+            ProductDetailsManager.searchquery = ProductSearchBox.Text;
             ProductDetailsManager.Show();
         }
 
@@ -28,6 +29,7 @@ namespace InventoryManager
         {
             this.Hide();
             ProductDetailsManager ProductDetailsManager = new ProductDetailsManager();
+            ProductDetailsManager.searchquery = "*";
             ProductDetailsManager.Show();
         }
 

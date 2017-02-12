@@ -119,6 +119,7 @@
             this.viewAllInventory.RowTemplate.Height = 24;
             this.viewAllInventory.Size = new System.Drawing.Size(750, 569);
             this.viewAllInventory.TabIndex = 10;
+            this.viewAllInventory.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewAllInventory_CellContentClick);
             // 
             // AllInventory
             // 

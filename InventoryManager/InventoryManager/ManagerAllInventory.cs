@@ -17,30 +17,24 @@ namespace InventoryManager
         public AllInventory()
         {
             InitializeComponent();
-            connectionstring = ConfigurationManager.ConnectionStrings["C:\\USERS\\MICHAEL\\DOCUMENTS\\CST117_INVENTORYPROJECT\\MASTER_DB_2_5_2017\\T2G_MAINDB.MDF"].ConnectionString;
+            
         }
-
-        //static private ManagerScreen access = new ManagerScreen();
-        //public string searchquery = access.CustomerSearchBox.Text;
         public string searchquery;
-        SqlConnection connection1;
-        string connectionstring;
-
-        public searchquery1()
-        {
-            using (connection1 = new SqlConnection(connectionstring))
-            using (SqlDataAdapter adapter = new SqlDataAdapter("Select searchquery from Main_Inventory", connectionstring))
-            {
-                
-                adapter.Fill(viewAllInventory);
-
-            }
-        }
-        
 
         private void AllInventory_Load(object sender, EventArgs e)
         {
-            searchquery1();
+            SqlConnection connection1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Michael\Documents\CST117_InventoryProject\MASTER_DB_2_5_2017\T2G_MainDB.mdf;Integrated Security=True;Connect Timeout=30");
+            connection1.Open();
+            //SqlCommand readinventory = new SqlCommand("select Title, Details, Price, Brand, Type from Main_Inventory where Main_Inventory = '" + searchquery + "'", connection1);
+            //SqlDataReader inventorysearch = readinventory.ExecuteReader();
+            SqlDataAdapter searchinventory = new SqlDataAdapter("select Title, Details, Price, Brand, Type from Main_Inventory where Title = '" + searchquery + "'", connection1);
+            DataTable viewinventory = new DataTable();
+            searchinventory.Fill(viewinventory);
+            BindingSource inventory_BS = new BindingSource();
+            inventory_BS.DataSource = viewinventory;
+            viewAllInventory.DataSource = inventory_BS;
+            viewAllInventory.Show();
+            //connection1.Close();
         }
 
         private void btnPreviousMenu_Click(object sender, EventArgs e)
@@ -68,9 +62,14 @@ namespace InventoryManager
 
         private void returnClick(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             InventoryManager form1 = new InventoryManager();
             form1.Show();
+        }
+
+        private void viewAllInventory_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }

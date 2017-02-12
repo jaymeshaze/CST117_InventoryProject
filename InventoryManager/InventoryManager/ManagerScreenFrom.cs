@@ -33,6 +33,7 @@ namespace InventoryManager
         }
         public void CUST_SRCH_BOX_Click(object sender, EventArgs e)
         {
+            this.Close();
             AllInventory s = new AllInventory();
             s.searchquery = CustomerSearchBox.Text;
             s.Show();
@@ -54,14 +55,14 @@ namespace InventoryManager
 
         private void manageUsersEvent(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             UserManagement UserManagement  = new UserManagement();
             UserManagement.Show();
         }
 
         private void btnInventoryManagement_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             InventoryManager InventoryManagement = new InventoryManager();
             InventoryManagement.Show();
         }

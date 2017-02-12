@@ -59,6 +59,7 @@
             this.viewProductList.RowTemplate.Height = 24;
             this.viewProductList.Size = new System.Drawing.Size(750, 569);
             this.viewProductList.TabIndex = 10;
+            this.viewProductList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewProductList_CellContentClick);
             // 
             // btnByBrand
             // 
