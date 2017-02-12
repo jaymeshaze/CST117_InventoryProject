@@ -17,19 +17,19 @@ namespace InventoryManager
             InitializeComponent();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void NewItem_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void txtbxTitle_TextChanged(object sender, EventArgs e)
+        private void btnImgBrowse_Clicked(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
