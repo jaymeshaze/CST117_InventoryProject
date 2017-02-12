@@ -20,13 +20,22 @@ namespace InventoryManager
         private void CUSTOMER_SEARCH_Load(object sender, EventArgs e)
         {
 
+            try
+            {
+                string search = CustomerSearchBox.Text;
+            }
+            catch (Exception )
+            {
+                MessageBox.Show("Invalid Search");
+                return;
+            }
+
         }
-
-        
-
-        private void CUST_SRCH_BOX_Click(object sender, EventArgs e)
+        public void CUST_SRCH_BOX_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This searches the store inventory and displays the desired item.");
+            AllInventory s = new AllInventory();
+            s.searchquery = CustomerSearchBox.Text;
+            s.Show();
         }
 
         
@@ -57,14 +66,8 @@ namespace InventoryManager
             InventoryManagement.Show();
         }
 
-        private void inventoryOptimizationEvent(object sender, EventArgs e)
-        {
-            MessageBox.Show("This Optomizes the Inventory.");
-        }
+        
 
-        private void inventoryOrderEvent(object sender, EventArgs e)
-        {
-            MessageBox.Show("This Orders new Inventory.");
-        }
+        
     }
 }
