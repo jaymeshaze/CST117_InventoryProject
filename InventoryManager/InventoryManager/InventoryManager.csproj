@@ -12,6 +12,21 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -154,12 +169,6 @@
     <Compile Include="ManagerUserSearchForm.Designer.cs">
       <DependentUpon>ManagerUserSearchForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ManagerUserUpdateForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ManagerUserUpdateForm.Designer.cs">
-      <DependentUpon>ManagerUserUpdateForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ManagerStockStatusForm.cs">
@@ -222,9 +231,6 @@
     <EmbeddedResource Include="ManagerUserSearchForm.resx">
       <DependentUpon>ManagerUserSearchForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ManageruserUpdateForm.resx">
-      <DependentUpon>ManagerUserUpdateForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -249,7 +255,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TTG_LOGO_LOGIN_SCREEN_WIDTH-477PX.png" />
@@ -273,17 +281,25 @@
     <None Include="Resources\SEARCH_ICON_75X47_002.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\imgs\FOR_HONOR_PS4.jpg" />
-    <Content Include="Resources\imgs\FOR_HONOR_XB1.jpg" />
-    <Content Include="Resources\imgs\HOR_ZERO_DWN_PS4.jpg" />
-    <Content Include="Resources\imgs\LGND_ZELDA_BRTH_WLD_WIIU.jpg" />
-    <Content Include="Resources\imgs\MASS_EFF_ANDRO_XB1.jpg" />
-    <Content Include="Resources\imgs\NIOH_PS4.jpg" />
-    <Content Include="Resources\imgs\RES_EVIL_7_PS4.jpg" />
-    <Content Include="Resources\imgs\RES_EVIL_7_XB1.jpg" />
+    <Content Include="T2G_MainDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="T2G_MainDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>T2G_MainDB.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\IMG_TEST\" />
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

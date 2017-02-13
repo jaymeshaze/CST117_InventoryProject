@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace InventoryManager
 {
@@ -26,7 +27,18 @@ namespace InventoryManager
 
         private void StockSearch_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("When application is live, the user will be able to select an item and it will pop a screen requesting/saving updates");
+            SqlConnection connection1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Michael\Documents\CST117_InventoryProject\MASTER_DB_2_5_2017\T2G_MainDB.mdf;Integrated Security=True;Connect Timeout=30");
+            connection1.Open();
+            //SqlCommand readinventory = new SqlCommand("select Title, Details, Price, Brand, Type from Main_Inventory where Main_Inventory = '" + searchquery + "'", connection1);
+            //SqlDataReader inventorysearch = readinventory.ExecuteReader();
+            SqlDataAdapter searchinventory = new SqlDataAdapter("select Title, Details, Price, Brand, Type from Main_Inventory where Title = '" + searchquery + "'", connection1);
+            DataTable viewinventory = new DataTable();
+            searchinventory.Fill(viewinventory);
+            BindingSource inventory_BS = new BindingSource();
+            inventory_BS.DataSource = viewinventory;
+            viewStock.DataSource = inventory_BS;
+            viewStock.Show();
+            //connection1.Close();
         }
 
         private void btnPreviousMenu_Click(object sender, EventArgs e)
@@ -49,6 +61,19 @@ namespace InventoryManager
         private void btnByType_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This will sort stock by type");
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            StockControl form1 = new StockControl();
+            form1.Show();
+        }
+
+        public string searchquery;
+        private void viewStock_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
         }
     }
 }

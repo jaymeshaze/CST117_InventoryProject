@@ -17,12 +17,7 @@ namespace InventoryManager
             InitializeComponent();
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            LoginScreen ss = new LoginScreen();
-            ss.Show();
-        }
+        
 
         private void AnalyticData_Load(object sender, EventArgs e)
         {
@@ -60,6 +55,13 @@ namespace InventoryManager
         private void btnByType_Click(object sender, EventArgs e)
         {
             MessageBox.Show("This will sort data by type");
+        }
+
+        private void returnClick(object sender, EventArgs e)
+        {
+            this.Hide();
+            Analytics form1 = new Analytics();
+            form1.Show();
         }
     }
 }
