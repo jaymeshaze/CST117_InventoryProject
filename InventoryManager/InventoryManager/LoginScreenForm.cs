@@ -21,7 +21,7 @@ namespace InventoryManager
         private void LOGIN_BUTTON_Click(object sender, EventArgs e)
         {
             //connection is made to T2G_MainDB
-            SqlConnection Emp_List_Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Michael\Documents\CST117_InventoryProject\MASTER_DB_2_5_2017\T2G_MainDB.mdf;Integrated Security=True;Connect Timeout=30");
+            SqlConnection Emp_List_Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\T2G_MainDB.mdf;Integrated Security=True");
             Emp_List_Con.Open();
             //Query Employee Table verify username and password exists
             SqlCommand UserValidate_command = new SqlCommand("select Username, Password, Title from Emp_List where Username = '" + UsernameTextField.Text + "' and Password = '" + PasswordTextField.Text + "'", Emp_List_Con);
