@@ -75,7 +75,6 @@
             this.txtbx_fName.Name = "txtbx_fName";
             this.txtbx_fName.Size = new System.Drawing.Size(262, 32);
             this.txtbx_fName.TabIndex = 21;
-            this.txtbx_fName.TextChanged += new System.EventHandler(this.txtbx_fName_TextChanged);
             // 
             // txtbx_lName
             // 
@@ -84,7 +83,6 @@
             this.txtbx_lName.Name = "txtbx_lName";
             this.txtbx_lName.Size = new System.Drawing.Size(262, 32);
             this.txtbx_lName.TabIndex = 22;
-            this.txtbx_lName.TextChanged += new System.EventHandler(this.txtbx_lName_TextChanged);
             // 
             // comboBox_Title
             // 
@@ -100,7 +98,6 @@
             this.comboBox_Title.Name = "comboBox_Title";
             this.comboBox_Title.Size = new System.Drawing.Size(262, 31);
             this.comboBox_Title.TabIndex = 23;
-            this.comboBox_Title.SelectedIndexChanged += new System.EventHandler(this.comboBox_Title_SelectedIndexChanged);
             // 
             // txtbx_Username
             // 
@@ -109,7 +106,6 @@
             this.txtbx_Username.Name = "txtbx_Username";
             this.txtbx_Username.Size = new System.Drawing.Size(262, 32);
             this.txtbx_Username.TabIndex = 24;
-            this.txtbx_Username.TextChanged += new System.EventHandler(this.txtbx_Username_TextChanged);
             // 
             // txtbx_Password
             // 
@@ -118,7 +114,6 @@
             this.txtbx_Password.Name = "txtbx_Password";
             this.txtbx_Password.Size = new System.Drawing.Size(262, 32);
             this.txtbx_Password.TabIndex = 25;
-            this.txtbx_Password.TextChanged += new System.EventHandler(this.txtbx_Password_TextChanged);
             // 
             // grpbx_NewUser
             // 

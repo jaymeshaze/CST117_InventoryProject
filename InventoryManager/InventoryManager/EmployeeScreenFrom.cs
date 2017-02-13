@@ -116,30 +116,5 @@ namespace InventoryManager
         {
 
         }
-
-        private void ListStockSearch_btn_Click(object sender, EventArgs e)
-        {
-
-            string store = ListStoreText.Text;
-            if (!IsAllDigits(store))
-            {
-                MessageBox.Show("Only digits are allowed for store number");
-            }
-            else if (store.Length != 6)
-            {
-                MessageBox.Show("Store code must be 6 digits long");
-            }
-            else
-            {
-                string message = String.Format("The stock list for store {0} will be displayed here. ", store);
-                MessageBox.Show(message);
-            }
-        }
-
-        public bool IsAllDigits(string s)
-        {
-            return s.All(char.IsDigit);
-        }
     }
-
 }

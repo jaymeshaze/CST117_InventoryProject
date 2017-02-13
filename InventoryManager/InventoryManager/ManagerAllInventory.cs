@@ -7,8 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Configuration;
-using System.Data.SqlClient;
 
 namespace InventoryManager
 {
@@ -17,30 +15,18 @@ namespace InventoryManager
         public AllInventory()
         {
             InitializeComponent();
-            connectionstring = ConfigurationManager.ConnectionStrings["C:\\USERS\\MICHAEL\\DOCUMENTS\\CST117_INVENTORYPROJECT\\MASTER_DB_2_5_2017\\T2G_MAINDB.MDF"].ConnectionString;
         }
 
-        //static private ManagerScreen access = new ManagerScreen();
-        //public string searchquery = access.CustomerSearchBox.Text;
-        public string searchquery;
-        SqlConnection connection1;
-        string connectionstring;
-
-        public searchquery1()
+        private void btnLogout_Click(object sender, EventArgs e)
         {
-            using (connection1 = new SqlConnection(connectionstring))
-            using (SqlDataAdapter adapter = new SqlDataAdapter("Select searchquery from Main_Inventory", connectionstring))
-            {
-                
-                adapter.Fill(viewAllInventory);
-
-            }
+            this.Hide();
+            LoginScreen ss = new LoginScreen();
+            ss.Show();
         }
-        
 
         private void AllInventory_Load(object sender, EventArgs e)
         {
-            searchquery1();
+
         }
 
         private void btnPreviousMenu_Click(object sender, EventArgs e)

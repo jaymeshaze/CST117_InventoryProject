@@ -23,32 +23,6 @@ namespace InventoryManager
 
         }
 
-        private void txtbx_fName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtbx_lName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtbx_Username_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtbx_Password_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox_Title_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        
         private void btnAdd_Click(object sender, EventArgs e)
         {
             //nested if statements to check for any blank or unselected fields

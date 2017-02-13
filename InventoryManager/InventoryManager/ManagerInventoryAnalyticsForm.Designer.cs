@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Analytics));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.btnPopular = new System.Windows.Forms.Button();
             this.btnHighSellers = new System.Windows.Forms.Button();
             this.btnLowSellers = new System.Windows.Forms.Button();
             this.grpbxNavButtons = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grpbxNavButtons.SuspendLayout();
             this.SuspendLayout();
@@ -43,11 +43,23 @@
             // 
             this.pictureBox1.Image = global::InventoryManager.Properties.Resources.TTG_LOGO_LOGIN_SCREEN_WIDTH_477PX;
             this.pictureBox1.Location = new System.Drawing.Point(531, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(486, 321);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.btnLogout.Location = new System.Drawing.Point(1250, 12);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(100, 23);
+            this.btnLogout.TabIndex = 9;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnPopular
             // 
@@ -55,7 +67,7 @@
             this.btnPopular.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPopular.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnPopular.Location = new System.Drawing.Point(16, 22);
-            this.btnPopular.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPopular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPopular.Name = "btnPopular";
             this.btnPopular.Size = new System.Drawing.Size(337, 59);
             this.btnPopular.TabIndex = 10;
@@ -69,7 +81,7 @@
             this.btnHighSellers.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHighSellers.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnHighSellers.Location = new System.Drawing.Point(16, 92);
-            this.btnHighSellers.Margin = new System.Windows.Forms.Padding(2);
+            this.btnHighSellers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnHighSellers.Name = "btnHighSellers";
             this.btnHighSellers.Size = new System.Drawing.Size(337, 59);
             this.btnHighSellers.TabIndex = 11;
@@ -83,7 +95,7 @@
             this.btnLowSellers.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLowSellers.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnLowSellers.Location = new System.Drawing.Point(16, 162);
-            this.btnLowSellers.Margin = new System.Windows.Forms.Padding(2);
+            this.btnLowSellers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLowSellers.Name = "btnLowSellers";
             this.btnLowSellers.Size = new System.Drawing.Size(337, 59);
             this.btnLowSellers.TabIndex = 12;
@@ -98,24 +110,12 @@
             this.grpbxNavButtons.Controls.Add(this.btnHighSellers);
             this.grpbxNavButtons.Controls.Add(this.btnLowSellers);
             this.grpbxNavButtons.Location = new System.Drawing.Point(536, 321);
-            this.grpbxNavButtons.Margin = new System.Windows.Forms.Padding(2);
+            this.grpbxNavButtons.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpbxNavButtons.Name = "grpbxNavButtons";
-            this.grpbxNavButtons.Padding = new System.Windows.Forms.Padding(2);
+            this.grpbxNavButtons.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpbxNavButtons.Size = new System.Drawing.Size(368, 239);
             this.grpbxNavButtons.TabIndex = 13;
             this.grpbxNavButtons.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(1254, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 36);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Return";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.returnClick);
             // 
             // Analytics
             // 
@@ -123,12 +123,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1362, 741);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.grpbxNavButtons);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Analytics";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team 2 Games Analytics";
@@ -143,10 +143,10 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnPopular;
         private System.Windows.Forms.Button btnHighSellers;
         private System.Windows.Forms.Button btnLowSellers;
         private System.Windows.Forms.GroupBox grpbxNavButtons;
-        private System.Windows.Forms.Button button1;
     }
 }

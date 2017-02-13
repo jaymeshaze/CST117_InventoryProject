@@ -17,13 +17,17 @@ namespace InventoryManager
             InitializeComponent();
         }
 
-        
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginScreen ss = new LoginScreen();
+            ss.Show();
+        }
 
         private void btnViewAll_Click(object sender, EventArgs e)
         {
             this.Hide();
             AllInventory AllInventory = new AllInventory();
-            AllInventory.searchquery = "*";
             AllInventory.Show();
         }
 

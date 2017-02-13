@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InventoryManager));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnViewAll = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.btnAnalytics = new System.Windows.Forms.Button();
             this.btnManageDetails = new System.Windows.Forms.Button();
             this.btnManageStock = new System.Windows.Forms.Button();
@@ -44,7 +45,7 @@
             // 
             this.pictureBox1.Image = global::InventoryManager.Properties.Resources.TTG_LOGO_LOGIN_SCREEN_WIDTH_477PX;
             this.pictureBox1.Location = new System.Drawing.Point(531, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(486, 321);
             this.pictureBox1.TabIndex = 0;
@@ -56,7 +57,7 @@
             this.btnViewAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewAll.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnViewAll.Location = new System.Drawing.Point(16, 22);
-            this.btnViewAll.Margin = new System.Windows.Forms.Padding(2);
+            this.btnViewAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnViewAll.Name = "btnViewAll";
             this.btnViewAll.Size = new System.Drawing.Size(337, 59);
             this.btnViewAll.TabIndex = 4;
@@ -64,13 +65,26 @@
             this.btnViewAll.UseVisualStyleBackColor = false;
             this.btnViewAll.Click += new System.EventHandler(this.btnViewAll_Click);
             // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnLogout.Location = new System.Drawing.Point(1250, 12);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(96, 36);
+            this.btnLogout.TabIndex = 9;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            // 
             // btnAnalytics
             // 
             this.btnAnalytics.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnAnalytics.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnalytics.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnAnalytics.Location = new System.Drawing.Point(16, 92);
-            this.btnAnalytics.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAnalytics.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAnalytics.Name = "btnAnalytics";
             this.btnAnalytics.Size = new System.Drawing.Size(337, 59);
             this.btnAnalytics.TabIndex = 10;
@@ -84,7 +98,7 @@
             this.btnManageDetails.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageDetails.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnManageDetails.Location = new System.Drawing.Point(16, 162);
-            this.btnManageDetails.Margin = new System.Windows.Forms.Padding(2);
+            this.btnManageDetails.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnManageDetails.Name = "btnManageDetails";
             this.btnManageDetails.Size = new System.Drawing.Size(337, 59);
             this.btnManageDetails.TabIndex = 11;
@@ -98,7 +112,7 @@
             this.btnManageStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageStock.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.btnManageStock.Location = new System.Drawing.Point(16, 232);
-            this.btnManageStock.Margin = new System.Windows.Forms.Padding(2);
+            this.btnManageStock.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnManageStock.Name = "btnManageStock";
             this.btnManageStock.Size = new System.Drawing.Size(337, 59);
             this.btnManageStock.TabIndex = 12;
@@ -114,9 +128,9 @@
             this.grpbxNavButtons.Controls.Add(this.btnAnalytics);
             this.grpbxNavButtons.Controls.Add(this.btnViewAll);
             this.grpbxNavButtons.Location = new System.Drawing.Point(536, 321);
-            this.grpbxNavButtons.Margin = new System.Windows.Forms.Padding(2);
+            this.grpbxNavButtons.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpbxNavButtons.Name = "grpbxNavButtons";
-            this.grpbxNavButtons.Padding = new System.Windows.Forms.Padding(2);
+            this.grpbxNavButtons.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.grpbxNavButtons.Size = new System.Drawing.Size(368, 308);
             this.grpbxNavButtons.TabIndex = 13;
             this.grpbxNavButtons.TabStop = false;
@@ -125,7 +139,7 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(1254, 12);
+            this.button1.Location = new System.Drawing.Point(1148, 13);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(96, 36);
             this.button1.TabIndex = 14;
@@ -141,10 +155,11 @@
             this.ClientSize = new System.Drawing.Size(1362, 741);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.grpbxNavButtons);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "InventoryManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team 2 Games Inventory Management";
@@ -160,6 +175,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnViewAll;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnAnalytics;
         private System.Windows.Forms.Button btnManageDetails;
         private System.Windows.Forms.Button btnManageStock;

@@ -31,19 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewItem));
             this.btnAdd = new System.Windows.Forms.Button();
             this.labelAddItem = new System.Windows.Forms.Label();
-            this.txtbx_fName = new System.Windows.Forms.TextBox();
-            this.txtbx_lName = new System.Windows.Forms.TextBox();
-            this.comboBox_Title = new System.Windows.Forms.ComboBox();
-            this.txtbx_Username = new System.Windows.Forms.TextBox();
-            this.txtbx_Password = new System.Windows.Forms.TextBox();
+            this.txtbx_Title = new System.Windows.Forms.TextBox();
+            this.txtbx_imgPath = new System.Windows.Forms.TextBox();
+            this.txtbx_Price = new System.Windows.Forms.TextBox();
+            this.txtbx_Brand = new System.Windows.Forms.TextBox();
             this.grpbx_NewUser = new System.Windows.Forms.GroupBox();
+            this.btnImgBrowse = new System.Windows.Forms.Button();
+            this.rtxtbx_Details = new System.Windows.Forms.RichTextBox();
+            this.txtbx_Type = new System.Windows.Forms.TextBox();
+            this.grpbx_NewUser.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAdd
             // 
             this.btnAdd.Font = new System.Drawing.Font("Neuropol", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnAdd.Location = new System.Drawing.Point(141, 447);
+            this.btnAdd.Location = new System.Drawing.Point(220, 485);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(173, 28);
@@ -56,89 +59,103 @@
             // 
             this.labelAddItem.AutoSize = true;
             this.labelAddItem.Font = new System.Drawing.Font("Neuropol", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAddItem.Location = new System.Drawing.Point(51, 59);
+            this.labelAddItem.Location = new System.Drawing.Point(136, 29);
             this.labelAddItem.Name = "labelAddItem";
             this.labelAddItem.Size = new System.Drawing.Size(348, 25);
             this.labelAddItem.TabIndex = 18;
             this.labelAddItem.Text = "Add New Item Information";
             // 
-            // txtbx_fName
+            // txtbx_Title
             // 
-            this.txtbx_fName.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_fName.Location = new System.Drawing.Point(93, 150);
-            this.txtbx_fName.Name = "txtbx_fName";
-            this.txtbx_fName.Size = new System.Drawing.Size(262, 27);
-            this.txtbx_fName.TabIndex = 21;
-            this.txtbx_fName.Text = "First Name";
-            this.txtbx_fName.TextChanged += new System.EventHandler(this.txtbx_fName_TextChanged);
+            this.txtbx_Title.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_Title.Location = new System.Drawing.Point(93, 110);
+            this.txtbx_Title.Name = "txtbx_Title";
+            this.txtbx_Title.Size = new System.Drawing.Size(432, 27);
+            this.txtbx_Title.TabIndex = 21;
+            this.txtbx_Title.Text = "Title";
             // 
-            // txtbx_lName
+            // txtbx_lmgPath
             // 
-            this.txtbx_lName.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_lName.Location = new System.Drawing.Point(93, 200);
-            this.txtbx_lName.Name = "txtbx_lName";
-            this.txtbx_lName.Size = new System.Drawing.Size(262, 27);
-            this.txtbx_lName.TabIndex = 22;
-            this.txtbx_lName.Text = "Last Name";
-            this.txtbx_lName.TextChanged += new System.EventHandler(this.txtbx_lName_TextChanged);
+            this.txtbx_imgPath.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_imgPath.Location = new System.Drawing.Point(93, 285);
+            this.txtbx_imgPath.Name = "txtbx_lmgPath";
+            this.txtbx_imgPath.Size = new System.Drawing.Size(296, 27);
+            this.txtbx_imgPath.TabIndex = 22;
+            this.txtbx_imgPath.Text = "Upload Image";
             // 
-            // comboBox_Title
+            // txtbx_Price
             // 
-            this.comboBox_Title.AllowDrop = true;
-            this.comboBox_Title.Font = new System.Drawing.Font("Neuropol", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox_Title.FormattingEnabled = true;
-            this.comboBox_Title.Items.AddRange(new object[] {
-            "Manager",
-            "Associate",
-            "Guest"});
-            this.comboBox_Title.Location = new System.Drawing.Point(93, 250);
-            this.comboBox_Title.Name = "comboBox_Title";
-            this.comboBox_Title.Size = new System.Drawing.Size(262, 27);
-            this.comboBox_Title.TabIndex = 23;
-            this.comboBox_Title.Text = "Select User Title";
+            this.txtbx_Price.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_Price.Location = new System.Drawing.Point(93, 326);
+            this.txtbx_Price.Name = "txtbx_Price";
+            this.txtbx_Price.Size = new System.Drawing.Size(432, 27);
+            this.txtbx_Price.TabIndex = 24;
+            this.txtbx_Price.Text = "Price";
             // 
-            // txtbx_Username
+            // txtbx_Brand
             // 
-            this.txtbx_Username.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_Username.Location = new System.Drawing.Point(93, 299);
-            this.txtbx_Username.Name = "txtbx_Username";
-            this.txtbx_Username.Size = new System.Drawing.Size(262, 27);
-            this.txtbx_Username.TabIndex = 24;
-            this.txtbx_Username.Text = "Username";
-            this.txtbx_Username.TextChanged += new System.EventHandler(this.txtbx_Username_TextChanged);
-            // 
-            // txtbx_Password
-            // 
-            this.txtbx_Password.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_Password.Location = new System.Drawing.Point(93, 348);
-            this.txtbx_Password.Name = "txtbx_Password";
-            this.txtbx_Password.Size = new System.Drawing.Size(262, 27);
-            this.txtbx_Password.TabIndex = 25;
-            this.txtbx_Password.Text = "Password";
-            this.txtbx_Password.TextChanged += new System.EventHandler(this.txtbx_Password_TextChanged);
+            this.txtbx_Brand.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_Brand.Location = new System.Drawing.Point(93, 367);
+            this.txtbx_Brand.Name = "txtbx_Brand";
+            this.txtbx_Brand.Size = new System.Drawing.Size(432, 27);
+            this.txtbx_Brand.TabIndex = 25;
+            this.txtbx_Brand.Text = "Brand";
             // 
             // grpbx_NewUser
             // 
+            this.grpbx_NewUser.Controls.Add(this.btnImgBrowse);
+            this.grpbx_NewUser.Controls.Add(this.rtxtbx_Details);
             this.grpbx_NewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpbx_NewUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.grpbx_NewUser.Location = new System.Drawing.Point(73, 118);
+            this.grpbx_NewUser.Location = new System.Drawing.Point(73, 82);
             this.grpbx_NewUser.Name = "grpbx_NewUser";
-            this.grpbx_NewUser.Size = new System.Drawing.Size(300, 280);
+            this.grpbx_NewUser.Size = new System.Drawing.Size(470, 371);
             this.grpbx_NewUser.TabIndex = 26;
             this.grpbx_NewUser.TabStop = false;
-            this.grpbx_NewUser.Text = "New User";
+            this.grpbx_NewUser.Text = "New Inventory Item";
+            // 
+            // btnImgBrowse
+            // 
+            this.btnImgBrowse.Font = new System.Drawing.Font("Neuropol", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImgBrowse.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnImgBrowse.Location = new System.Drawing.Point(323, 202);
+            this.btnImgBrowse.Margin = new System.Windows.Forms.Padding(4);
+            this.btnImgBrowse.Name = "btnImgBrowse";
+            this.btnImgBrowse.Size = new System.Drawing.Size(129, 28);
+            this.btnImgBrowse.TabIndex = 27;
+            this.btnImgBrowse.Text = "Browse";
+            this.btnImgBrowse.UseVisualStyleBackColor = true;
+            this.btnImgBrowse.Click += new System.EventHandler(this.btnImgBrowse_Clicked);
+            // 
+            // rtxtbx_Details
+            // 
+            this.rtxtbx_Details.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxtbx_Details.Location = new System.Drawing.Point(20, 67);
+            this.rtxtbx_Details.Name = "rtxtbx_Details";
+            this.rtxtbx_Details.Size = new System.Drawing.Size(432, 122);
+            this.rtxtbx_Details.TabIndex = 0;
+            this.rtxtbx_Details.Text = "Details";
+            // 
+            // txtbx_Type
+            // 
+            this.txtbx_Type.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbx_Type.Location = new System.Drawing.Point(93, 409);
+            this.txtbx_Type.Name = "txtbx_Type";
+            this.txtbx_Type.Size = new System.Drawing.Size(432, 27);
+            this.txtbx_Type.TabIndex = 27;
+            this.txtbx_Type.Text = "Type";
             // 
             // NewItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(448, 527);
-            this.Controls.Add(this.txtbx_Password);
-            this.Controls.Add(this.txtbx_Username);
-            this.Controls.Add(this.comboBox_Title);
-            this.Controls.Add(this.txtbx_lName);
-            this.Controls.Add(this.txtbx_fName);
+            this.ClientSize = new System.Drawing.Size(613, 544);
+            this.Controls.Add(this.txtbx_Type);
+            this.Controls.Add(this.txtbx_Brand);
+            this.Controls.Add(this.txtbx_Price);
+            this.Controls.Add(this.txtbx_imgPath);
+            this.Controls.Add(this.txtbx_Title);
             this.Controls.Add(this.labelAddItem);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.grpbx_NewUser);
@@ -148,6 +165,8 @@
             this.Name = "NewItem";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team 2 Games Add New Item";
+            this.Load += new System.EventHandler(this.NewItem_Load);
+            this.grpbx_NewUser.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,11 +176,13 @@
 
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label labelAddItem;
-        private System.Windows.Forms.TextBox txtbx_fName;
-        private System.Windows.Forms.TextBox txtbx_lName;
-        private System.Windows.Forms.ComboBox comboBox_Title;
-        private System.Windows.Forms.TextBox txtbx_Username;
-        private System.Windows.Forms.TextBox txtbx_Password;
+        private System.Windows.Forms.TextBox txtbx_Title;
+        private System.Windows.Forms.TextBox txtbx_imgPath;
+        private System.Windows.Forms.TextBox txtbx_Price;
+        private System.Windows.Forms.TextBox txtbx_Brand;
         private System.Windows.Forms.GroupBox grpbx_NewUser;
+        private System.Windows.Forms.RichTextBox rtxtbx_Details;
+        private System.Windows.Forms.Button btnImgBrowse;
+        private System.Windows.Forms.TextBox txtbx_Type;
     }
 }

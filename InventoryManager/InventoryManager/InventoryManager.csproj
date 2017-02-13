@@ -34,7 +34,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -155,6 +154,12 @@
     <Compile Include="ManagerUserSearchForm.Designer.cs">
       <DependentUpon>ManagerUserSearchForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManagerUserUpdateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagerUserUpdateForm.Designer.cs">
+      <DependentUpon>ManagerUserUpdateForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ManagerStockStatusForm.cs">
@@ -217,6 +222,9 @@
     <EmbeddedResource Include="ManagerUserSearchForm.resx">
       <DependentUpon>ManagerUserSearchForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageruserUpdateForm.resx">
+      <DependentUpon>ManagerUserUpdateForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -265,7 +273,17 @@
     <None Include="Resources\SEARCH_ICON_75X47_002.png" />
   </ItemGroup>
   <ItemGroup>
-    <WCFMetadata Include="Service References\" />
+    <Content Include="Resources\imgs\FOR_HONOR_PS4.jpg" />
+    <Content Include="Resources\imgs\FOR_HONOR_XB1.jpg" />
+    <Content Include="Resources\imgs\HOR_ZERO_DWN_PS4.jpg" />
+    <Content Include="Resources\imgs\LGND_ZELDA_BRTH_WLD_WIIU.jpg" />
+    <Content Include="Resources\imgs\MASS_EFF_ANDRO_XB1.jpg" />
+    <Content Include="Resources\imgs\NIOH_PS4.jpg" />
+    <Content Include="Resources\imgs\RES_EVIL_7_PS4.jpg" />
+    <Content Include="Resources\imgs\RES_EVIL_7_XB1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\IMG_TEST\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

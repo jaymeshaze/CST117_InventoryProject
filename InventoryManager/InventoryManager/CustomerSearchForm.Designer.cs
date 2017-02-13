@@ -119,16 +119,15 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.btnLogout.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnLogout.Location = new System.Drawing.Point(1249, 13);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(96, 36);
+            this.btnLogout.Size = new System.Drawing.Size(100, 23);
             this.btnLogout.TabIndex = 9;
             this.btnLogout.Text = "Logout";
-            this.btnLogout.UseVisualStyleBackColor = false;
+            this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // panel1

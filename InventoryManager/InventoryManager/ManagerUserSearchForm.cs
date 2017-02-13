@@ -98,12 +98,16 @@ namespace InventoryManager
             UpdateUserCMD.ExecuteNonQuery();
             //successful update confirmation message
             MessageBox.Show("User " + txtbx_fName.Text + txtbx_lName.Text + " was successfully updated!!!");
-
         }
 
-        private void lbl_EmployeeID_Click(object sender, EventArgs e)
+        private void btnDeleteUser_Click(object sender, EventArgs e)
         {
-
+            //delete sql command
+            SqlCommand DeleteUserCMD = new SqlCommand("delete from Emp_List where Id='" + lbl_EmpID.Text + "'", Emp_List_Con);
+            //command executed
+            DeleteUserCMD.ExecuteNonQuery();
+            //successful update confirmation message
+            MessageBox.Show("User Deleted!!!");
         }
     }
 }
