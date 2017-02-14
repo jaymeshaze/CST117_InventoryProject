@@ -17,7 +17,7 @@ namespace InventoryManager
         {
             InitializeComponent();
         }
-        SqlConnection Emp_List_Con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=T2G_MainDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+        SqlConnection Emp_List_Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\T2G_MainDB.mdf;Integrated Security=True");
 
         private void UpdateUser_Load(object sender, EventArgs e)
         {

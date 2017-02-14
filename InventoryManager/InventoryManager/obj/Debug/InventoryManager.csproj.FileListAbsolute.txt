@@ -27,3 +27,32 @@ C:\Users\IEUser\Documents\Visual Studio 2015\Projects\CST117_InventoryProject-ma
 C:\Users\IEUser\Documents\Visual Studio 2015\Projects\CST117_InventoryProject-master (1)\CST117_InventoryProject-master\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csproj.GenerateResource.Cache
 C:\Users\IEUser\Documents\Visual Studio 2015\Projects\CST117_InventoryProject-master (1)\CST117_InventoryProject-master\InventoryManager\InventoryManager\obj\Debug\InventoryManager.exe
 C:\Users\IEUser\Documents\Visual Studio 2015\Projects\CST117_InventoryProject-master (1)\CST117_InventoryProject-master\InventoryManager\InventoryManager\obj\Debug\InventoryManager.pdb
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe.config
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.exe
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.pdb
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csprojResolveAssemblyReference.cache
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.NewItem.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.AddUser.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.AllInventory.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.AnalyticData.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.Analytics.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.InventoryManager.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ProductSearch.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.DetailsUpdate.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.StockSearch.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ManagerScreen.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.EmployeeScreen.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.CustomerSearch.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.LoginScreen.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.ProductDetailsManager.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.StockControl.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.UploadStock.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.UserManagement.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.UpdateUser.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.Properties.Resources.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.StockStatus.resources
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\obj\Debug\InventoryManager.csproj.GenerateResource.Cache
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.exe
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\InventoryManager.pdb
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\T2G_MainDB_log.ldf
+C:\ComputerProgramming\cst117\CST117_InventoryProject\InventoryManager\InventoryManager\bin\Debug\T2G_MainDB.mdf
