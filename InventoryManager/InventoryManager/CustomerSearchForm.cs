@@ -32,6 +32,15 @@ namespace InventoryManager
             panel1.Visible = false;
             panel2.Visible = true;
 
+            masterGameView.Hide();
+            SqlDataAdapter MasterList_SDA = new SqlDataAdapter("select Title, Details, Price, Brand, Type from Main_Inventory", Inv_con);
+            DataTable MasterList_DT = new DataTable();
+            MasterList_SDA.Fill(MasterList_DT);
+            BindingSource MasterList_BS = new BindingSource();
+            MasterList_BS.DataSource = MasterList_DT;
+            masterGameView.DataSource = MasterList_BS;
+            
+
             SqlDataAdapter GameList_SDA = new SqlDataAdapter("select Title, Type from Main_Inventory", Inv_con);
             DataTable GameList_DT = new DataTable();
             GameList_SDA.Fill(GameList_DT);
@@ -39,7 +48,6 @@ namespace InventoryManager
             GameList_BS.DataSource = GameList_DT;
             viewGameList.DataSource = GameList_BS;
             viewGameList.Show();
-
         }
 
         private void CUST_SRCH_BOX_Click(object sender, EventArgs e)
@@ -52,6 +60,15 @@ namespace InventoryManager
             panel2.Visible = true;
 
             String userSearchString = CustomerSearchBox.Text;
+
+            masterGameView.Hide();
+            SqlDataAdapter MasterList_SDA = new SqlDataAdapter("select Title, Details, Price, Brand, Type from Main_Inventory where lower(Title) like lower('%" + userSearchString + "%')", Inv_con);
+            DataTable MasterList_DT = new DataTable();
+            MasterList_SDA.Fill(MasterList_DT);
+            BindingSource MasterList_BS = new BindingSource();
+            MasterList_BS.DataSource = MasterList_DT;
+            masterGameView.DataSource = MasterList_BS;
+            
 
             SqlDataAdapter SearchList_SDA = new SqlDataAdapter("select Title, Type from Main_Inventory where lower(Title) like lower('%" + userSearchString + "%')", Inv_con);
             DataTable SearchList_DT = new DataTable();
@@ -91,11 +108,15 @@ namespace InventoryManager
 
         private void viewGameList_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow row = this.viewGameList.Rows[e.RowIndex];
+            DataGridViewRow row = this.masterGameView.Rows[e.RowIndex];
 
             //places values for selected records in form for update
-            gameName_Lbl.Text = row.Cells["Title"].Value.ToString();
-            gamePlatform_Lbl.Text = row.Cells["Type"].Value.ToString();
+            gameName_txtbox.Text = row.Cells["Title"].Value.ToString();
+            gamePlatform_txtbox.Text = row.Cells["Type"].Value.ToString();
+            gameDesc_txtbox.Text = row.Cells["Details"].Value.ToString();
+            gamePub_txtbox.Text = row.Cells["Brand"].Value.ToString();
+            gamePrice_txtbox.Text = "$" + row.Cells["Price"].Value.ToString();
         }
+
     }
 }

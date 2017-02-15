@@ -37,20 +37,21 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.gameName_txtbox = new System.Windows.Forms.TextBox();
+            this.viewGameList = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.viewGameList = new System.Windows.Forms.DataGridView();
-            this.gameName_Lbl = new System.Windows.Forms.Label();
-            this.gamePrice_Lbl = new System.Windows.Forms.Label();
-            this.gamePlatform_Lbl = new System.Windows.Forms.Label();
-            this.gameDesc_Lbl = new System.Windows.Forms.Label();
-            this.GamePub_Lbl = new System.Windows.Forms.Label();
+            this.gamePlatform_txtbox = new System.Windows.Forms.TextBox();
+            this.gamePub_txtbox = new System.Windows.Forms.TextBox();
+            this.gameDesc_txtbox = new System.Windows.Forms.TextBox();
+            this.masterGameView = new System.Windows.Forms.DataGridView();
+            this.gamePrice_txtbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewGameList)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.masterGameView)).BeginInit();
             this.SuspendLayout();
             // 
             // CustomerSearchBox
@@ -139,32 +140,59 @@
             // 
             this.panel1.Controls.Add(this.CustomerSearchAllButton);
             this.panel1.Controls.Add(this.or_label);
-            this.panel1.Location = new System.Drawing.Point(67, 337);
+            this.panel1.Location = new System.Drawing.Point(76, 324);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1240, 392);
             this.panel1.TabIndex = 10;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.GamePub_Lbl);
-            this.panel2.Controls.Add(this.gameDesc_Lbl);
-            this.panel2.Controls.Add(this.gamePlatform_Lbl);
-            this.panel2.Controls.Add(this.gamePrice_Lbl);
-            this.panel2.Controls.Add(this.gameName_Lbl);
+            this.panel2.Controls.Add(this.gamePrice_txtbox);
+            this.panel2.Controls.Add(this.gameDesc_txtbox);
+            this.panel2.Controls.Add(this.gamePub_txtbox);
+            this.panel2.Controls.Add(this.gamePlatform_txtbox);
+            this.panel2.Controls.Add(this.gameName_txtbox);
             this.panel2.Controls.Add(this.viewGameList);
             this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(67, 337);
+            this.panel2.Controls.Add(this.masterGameView);
+            this.panel2.Location = new System.Drawing.Point(46, 337);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1240, 392);
             this.panel2.TabIndex = 11;
-            this.panel2.UseWaitCursor = true;
             this.panel2.Visible = false;
+            // 
+            // gameName_txtbox
+            // 
+            this.gameName_txtbox.BackColor = System.Drawing.SystemColors.Window;
+            this.gameName_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gameName_txtbox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gameName_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gameName_txtbox.Location = new System.Drawing.Point(781, 26);
+            this.gameName_txtbox.Multiline = true;
+            this.gameName_txtbox.Name = "gameName_txtbox";
+            this.gameName_txtbox.ReadOnly = true;
+            this.gameName_txtbox.Size = new System.Drawing.Size(255, 56);
+            this.gameName_txtbox.TabIndex = 18;
+            // 
+            // viewGameList
+            // 
+            this.viewGameList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.viewGameList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.viewGameList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.viewGameList.Cursor = System.Windows.Forms.Cursors.Default;
+            this.viewGameList.Location = new System.Drawing.Point(263, 14);
+            this.viewGameList.MultiSelect = false;
+            this.viewGameList.Name = "viewGameList";
+            this.viewGameList.ReadOnly = true;
+            this.viewGameList.Size = new System.Drawing.Size(442, 347);
+            this.viewGameList.TabIndex = 12;
+            this.viewGameList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewGameList_CellContentClick);
             // 
             // button2
             // 
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.Yes;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button2.Location = new System.Drawing.Point(907, 335);
@@ -173,7 +201,6 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "Back to Menu";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.UseWaitCursor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox2
@@ -182,23 +209,8 @@
             this.textBox2.Location = new System.Drawing.Point(759, 14);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(384, 315);
+            this.textBox2.Size = new System.Drawing.Size(446, 315);
             this.textBox2.TabIndex = 7;
-            this.textBox2.UseWaitCursor = true;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(439, 231);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(353, 107);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "SEARCH ALL GAMES";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.UseWaitCursor = true;
             // 
             // label1
             // 
@@ -211,66 +223,70 @@
             this.label1.Size = new System.Drawing.Size(42, 40);
             this.label1.TabIndex = 5;
             this.label1.Text = "or";
-            this.label1.UseWaitCursor = true;
             // 
-            // viewGameList
+            // gamePlatform_txtbox
             // 
-            this.viewGameList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.viewGameList.Cursor = System.Windows.Forms.Cursors.Default;
-            this.viewGameList.Location = new System.Drawing.Point(219, 14);
-            this.viewGameList.Name = "viewGameList";
-            this.viewGameList.Size = new System.Drawing.Size(510, 347);
-            this.viewGameList.TabIndex = 12;
-            this.viewGameList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewGameList_CellContentClick);
+            this.gamePlatform_txtbox.BackColor = System.Drawing.SystemColors.Window;
+            this.gamePlatform_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gamePlatform_txtbox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gamePlatform_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gamePlatform_txtbox.Location = new System.Drawing.Point(1093, 65);
+            this.gamePlatform_txtbox.Name = "gamePlatform_txtbox";
+            this.gamePlatform_txtbox.ReadOnly = true;
+            this.gamePlatform_txtbox.Size = new System.Drawing.Size(100, 17);
+            this.gamePlatform_txtbox.TabIndex = 19;
             // 
-            // gameName_Lbl
+            // gamePub_txtbox
             // 
-            this.gameName_Lbl.AutoSize = true;
-            this.gameName_Lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gameName_Lbl.Location = new System.Drawing.Point(775, 26);
-            this.gameName_Lbl.Name = "gameName_Lbl";
-            this.gameName_Lbl.Size = new System.Drawing.Size(86, 31);
-            this.gameName_Lbl.TabIndex = 13;
-            this.gameName_Lbl.Text = "Name";
+            this.gamePub_txtbox.BackColor = System.Drawing.SystemColors.Window;
+            this.gamePub_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gamePub_txtbox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gamePub_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gamePub_txtbox.Location = new System.Drawing.Point(781, 88);
+            this.gamePub_txtbox.Name = "gamePub_txtbox";
+            this.gamePub_txtbox.ReadOnly = true;
+            this.gamePub_txtbox.Size = new System.Drawing.Size(255, 17);
+            this.gamePub_txtbox.TabIndex = 20;
             // 
-            // gamePrice_Lbl
+            // gameDesc_txtbox
             // 
-            this.gamePrice_Lbl.AutoSize = true;
-            this.gamePrice_Lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gamePrice_Lbl.Location = new System.Drawing.Point(1073, 26);
-            this.gamePrice_Lbl.Name = "gamePrice_Lbl";
-            this.gamePrice_Lbl.Size = new System.Drawing.Size(53, 24);
-            this.gamePrice_Lbl.TabIndex = 14;
-            this.gamePrice_Lbl.Text = "Price";
+            this.gameDesc_txtbox.BackColor = System.Drawing.SystemColors.Window;
+            this.gameDesc_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gameDesc_txtbox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gameDesc_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gameDesc_txtbox.Location = new System.Drawing.Point(781, 132);
+            this.gameDesc_txtbox.Multiline = true;
+            this.gameDesc_txtbox.Name = "gameDesc_txtbox";
+            this.gameDesc_txtbox.ReadOnly = true;
+            this.gameDesc_txtbox.Size = new System.Drawing.Size(412, 180);
+            this.gameDesc_txtbox.TabIndex = 21;
             // 
-            // gamePlatform_Lbl
+            // masterGameView
             // 
-            this.gamePlatform_Lbl.AutoSize = true;
-            this.gamePlatform_Lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gamePlatform_Lbl.Location = new System.Drawing.Point(1032, 60);
-            this.gamePlatform_Lbl.Name = "gamePlatform_Lbl";
-            this.gamePlatform_Lbl.Size = new System.Drawing.Size(94, 26);
-            this.gamePlatform_Lbl.TabIndex = 15;
-            this.gamePlatform_Lbl.Text = "Platform";
+            this.masterGameView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.masterGameView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.masterGameView.Cursor = System.Windows.Forms.Cursors.Default;
+            this.masterGameView.Location = new System.Drawing.Point(126, 14);
+            this.masterGameView.MultiSelect = false;
+            this.masterGameView.Name = "masterGameView";
+            this.masterGameView.ReadOnly = true;
+            this.masterGameView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.masterGameView.Size = new System.Drawing.Size(103, 51);
+            this.masterGameView.TabIndex = 22;
+            this.masterGameView.Visible = false;
             // 
-            // gameDesc_Lbl
+            // gamePrice_txtbox
             // 
-            this.gameDesc_Lbl.AutoSize = true;
-            this.gameDesc_Lbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gameDesc_Lbl.Location = new System.Drawing.Point(778, 132);
-            this.gameDesc_Lbl.Name = "gameDesc_Lbl";
-            this.gameDesc_Lbl.Size = new System.Drawing.Size(83, 18);
-            this.gameDesc_Lbl.TabIndex = 16;
-            this.gameDesc_Lbl.Text = "Description";
-            // 
-            // GamePub_Lbl
-            // 
-            this.GamePub_Lbl.AutoSize = true;
-            this.GamePub_Lbl.Location = new System.Drawing.Point(778, 73);
-            this.GamePub_Lbl.Name = "GamePub_Lbl";
-            this.GamePub_Lbl.Size = new System.Drawing.Size(50, 13);
-            this.GamePub_Lbl.TabIndex = 17;
-            this.GamePub_Lbl.Text = "Publisher";
+            this.gamePrice_txtbox.BackColor = System.Drawing.SystemColors.Window;
+            this.gamePrice_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gamePrice_txtbox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gamePrice_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gamePrice_txtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.gamePrice_txtbox.Location = new System.Drawing.Point(1093, 26);
+            this.gamePrice_txtbox.Name = "gamePrice_txtbox";
+            this.gamePrice_txtbox.ReadOnly = true;
+            this.gamePrice_txtbox.Size = new System.Drawing.Size(100, 19);
+            this.gamePrice_txtbox.TabIndex = 23;
             // 
             // CustomerSearch
             // 
@@ -298,6 +314,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewGameList)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.masterGameView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -313,15 +330,15 @@
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView viewGameList;
-        private System.Windows.Forms.Label GamePub_Lbl;
-        private System.Windows.Forms.Label gameDesc_Lbl;
-        private System.Windows.Forms.Label gamePlatform_Lbl;
-        private System.Windows.Forms.Label gamePrice_Lbl;
-        private System.Windows.Forms.Label gameName_Lbl;
+        private System.Windows.Forms.TextBox gameName_txtbox;
+        private System.Windows.Forms.TextBox gamePlatform_txtbox;
+        private System.Windows.Forms.TextBox gameDesc_txtbox;
+        private System.Windows.Forms.TextBox gamePub_txtbox;
+        private System.Windows.Forms.DataGridView masterGameView;
+        private System.Windows.Forms.TextBox gamePrice_txtbox;
     }
 }
