@@ -15,10 +15,12 @@ namespace InventoryManager
     {
 
         SqlConnection Inv_con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\T2G_MainDB.mdf;Integrated Security=True");
+        
 
         public CustomerSearch()
         {
             InitializeComponent();
+            Inv_con.Open();
         }
 
         private void CUST_SRCH_ALL_Click(object sender, EventArgs e)
@@ -30,7 +32,6 @@ namespace InventoryManager
             panel1.Visible = false;
             panel2.Visible = true;
 
-            Inv_con.Open();
             SqlDataAdapter GameList_SDA = new SqlDataAdapter("select Title, Type from Main_Inventory", Inv_con);
             DataTable GameList_DT = new DataTable();
             GameList_SDA.Fill(GameList_DT);
@@ -49,10 +50,21 @@ namespace InventoryManager
             }
             panel1.Visible = false;
             panel2.Visible = true;
+
+            String userSearchString = CustomerSearchBox.Text;
+
+            SqlDataAdapter SearchList_SDA = new SqlDataAdapter("select Title, Type from Main_Inventory where lower(Title) like lower('%" + userSearchString + "%')", Inv_con);
+            DataTable SearchList_DT = new DataTable();
+            SearchList_SDA.Fill(SearchList_DT);
+            BindingSource SearchList_BS = new BindingSource();
+            SearchList_BS.DataSource = SearchList_DT;
+            viewGameList.DataSource = SearchList_BS;
+            viewGameList.Show();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
+            Inv_con.Close();
             this.Hide();
             LoginScreen ss = new LoginScreen();
             ss.Show();
