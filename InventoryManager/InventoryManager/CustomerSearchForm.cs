@@ -115,7 +115,8 @@ namespace InventoryManager
             gamePlatform_txtbox.Text = row.Cells["Type"].Value.ToString();
             gameDesc_txtbox.Text = row.Cells["Details"].Value.ToString();
             gamePub_txtbox.Text = row.Cells["Brand"].Value.ToString();
-            gamePrice_txtbox.Text = "$" + row.Cells["Price"].Value.ToString();
+            String priceFormatted = string.Format("{0:N2}", row.Cells["Price"].Value);
+            gamePrice_txtbox.Text = "$" + priceFormatted;
         }
 
     }

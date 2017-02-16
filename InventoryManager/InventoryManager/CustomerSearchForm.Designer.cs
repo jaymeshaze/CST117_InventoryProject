@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CustomerSearch));
             this.CustomerSearchBox = new System.Windows.Forms.TextBox();
             this.CustomerSearchBoxButton = new System.Windows.Forms.Button();
@@ -37,16 +38,16 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.gamePrice_txtbox = new System.Windows.Forms.TextBox();
+            this.gameDesc_txtbox = new System.Windows.Forms.TextBox();
+            this.gamePub_txtbox = new System.Windows.Forms.TextBox();
+            this.gamePlatform_txtbox = new System.Windows.Forms.TextBox();
             this.gameName_txtbox = new System.Windows.Forms.TextBox();
             this.viewGameList = new System.Windows.Forms.DataGridView();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.gamePlatform_txtbox = new System.Windows.Forms.TextBox();
-            this.gamePub_txtbox = new System.Windows.Forms.TextBox();
-            this.gameDesc_txtbox = new System.Windows.Forms.TextBox();
             this.masterGameView = new System.Windows.Forms.DataGridView();
-            this.gamePrice_txtbox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -163,13 +164,63 @@
             this.panel2.TabIndex = 11;
             this.panel2.Visible = false;
             // 
+            // gamePrice_txtbox
+            // 
+            this.gamePrice_txtbox.BackColor = System.Drawing.Color.DarkGray;
+            this.gamePrice_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gamePrice_txtbox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gamePrice_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gamePrice_txtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.gamePrice_txtbox.Location = new System.Drawing.Point(1062, 26);
+            this.gamePrice_txtbox.Name = "gamePrice_txtbox";
+            this.gamePrice_txtbox.ReadOnly = true;
+            this.gamePrice_txtbox.Size = new System.Drawing.Size(100, 19);
+            this.gamePrice_txtbox.TabIndex = 23;
+            // 
+            // gameDesc_txtbox
+            // 
+            this.gameDesc_txtbox.BackColor = System.Drawing.Color.DarkGray;
+            this.gameDesc_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gameDesc_txtbox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gameDesc_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gameDesc_txtbox.Location = new System.Drawing.Point(750, 132);
+            this.gameDesc_txtbox.Multiline = true;
+            this.gameDesc_txtbox.Name = "gameDesc_txtbox";
+            this.gameDesc_txtbox.ReadOnly = true;
+            this.gameDesc_txtbox.Size = new System.Drawing.Size(412, 180);
+            this.gameDesc_txtbox.TabIndex = 21;
+            // 
+            // gamePub_txtbox
+            // 
+            this.gamePub_txtbox.BackColor = System.Drawing.Color.DarkGray;
+            this.gamePub_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gamePub_txtbox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gamePub_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gamePub_txtbox.Location = new System.Drawing.Point(750, 88);
+            this.gamePub_txtbox.Name = "gamePub_txtbox";
+            this.gamePub_txtbox.ReadOnly = true;
+            this.gamePub_txtbox.Size = new System.Drawing.Size(255, 17);
+            this.gamePub_txtbox.TabIndex = 20;
+            // 
+            // gamePlatform_txtbox
+            // 
+            this.gamePlatform_txtbox.BackColor = System.Drawing.Color.DarkGray;
+            this.gamePlatform_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gamePlatform_txtbox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.gamePlatform_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gamePlatform_txtbox.Location = new System.Drawing.Point(1062, 65);
+            this.gamePlatform_txtbox.Name = "gamePlatform_txtbox";
+            this.gamePlatform_txtbox.ReadOnly = true;
+            this.gamePlatform_txtbox.Size = new System.Drawing.Size(100, 17);
+            this.gamePlatform_txtbox.TabIndex = 19;
+            // 
             // gameName_txtbox
             // 
-            this.gameName_txtbox.BackColor = System.Drawing.SystemColors.Window;
+            this.gameName_txtbox.BackColor = System.Drawing.Color.DarkGray;
             this.gameName_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gameName_txtbox.Cursor = System.Windows.Forms.Cursors.Default;
             this.gameName_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gameName_txtbox.Location = new System.Drawing.Point(781, 26);
+            this.gameName_txtbox.Location = new System.Drawing.Point(750, 26);
             this.gameName_txtbox.Multiline = true;
             this.gameName_txtbox.Name = "gameName_txtbox";
             this.gameName_txtbox.ReadOnly = true;
@@ -182,11 +233,19 @@
             this.viewGameList.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.viewGameList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.viewGameList.Cursor = System.Windows.Forms.Cursors.Default;
-            this.viewGameList.Location = new System.Drawing.Point(263, 14);
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.viewGameList.DefaultCellStyle = dataGridViewCellStyle1;
+            this.viewGameList.Location = new System.Drawing.Point(164, 14);
             this.viewGameList.MultiSelect = false;
             this.viewGameList.Name = "viewGameList";
             this.viewGameList.ReadOnly = true;
-            this.viewGameList.Size = new System.Drawing.Size(442, 347);
+            this.viewGameList.Size = new System.Drawing.Size(524, 347);
             this.viewGameList.TabIndex = 12;
             this.viewGameList.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewGameList_CellContentClick);
             // 
@@ -195,7 +254,7 @@
             this.button2.DialogResult = System.Windows.Forms.DialogResult.Yes;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.Location = new System.Drawing.Point(907, 335);
+            this.button2.Location = new System.Drawing.Point(876, 335);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(129, 39);
             this.button2.TabIndex = 11;
@@ -205,8 +264,8 @@
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Location = new System.Drawing.Point(759, 14);
+            this.textBox2.BackColor = System.Drawing.Color.DarkGray;
+            this.textBox2.Location = new System.Drawing.Point(728, 14);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(446, 315);
@@ -224,43 +283,6 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "or";
             // 
-            // gamePlatform_txtbox
-            // 
-            this.gamePlatform_txtbox.BackColor = System.Drawing.SystemColors.Window;
-            this.gamePlatform_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gamePlatform_txtbox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gamePlatform_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gamePlatform_txtbox.Location = new System.Drawing.Point(1093, 65);
-            this.gamePlatform_txtbox.Name = "gamePlatform_txtbox";
-            this.gamePlatform_txtbox.ReadOnly = true;
-            this.gamePlatform_txtbox.Size = new System.Drawing.Size(100, 17);
-            this.gamePlatform_txtbox.TabIndex = 19;
-            // 
-            // gamePub_txtbox
-            // 
-            this.gamePub_txtbox.BackColor = System.Drawing.SystemColors.Window;
-            this.gamePub_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gamePub_txtbox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gamePub_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gamePub_txtbox.Location = new System.Drawing.Point(781, 88);
-            this.gamePub_txtbox.Name = "gamePub_txtbox";
-            this.gamePub_txtbox.ReadOnly = true;
-            this.gamePub_txtbox.Size = new System.Drawing.Size(255, 17);
-            this.gamePub_txtbox.TabIndex = 20;
-            // 
-            // gameDesc_txtbox
-            // 
-            this.gameDesc_txtbox.BackColor = System.Drawing.SystemColors.Window;
-            this.gameDesc_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gameDesc_txtbox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gameDesc_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gameDesc_txtbox.Location = new System.Drawing.Point(781, 132);
-            this.gameDesc_txtbox.Multiline = true;
-            this.gameDesc_txtbox.Name = "gameDesc_txtbox";
-            this.gameDesc_txtbox.ReadOnly = true;
-            this.gameDesc_txtbox.Size = new System.Drawing.Size(412, 180);
-            this.gameDesc_txtbox.TabIndex = 21;
-            // 
             // masterGameView
             // 
             this.masterGameView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
@@ -274,19 +296,6 @@
             this.masterGameView.Size = new System.Drawing.Size(103, 51);
             this.masterGameView.TabIndex = 22;
             this.masterGameView.Visible = false;
-            // 
-            // gamePrice_txtbox
-            // 
-            this.gamePrice_txtbox.BackColor = System.Drawing.SystemColors.Window;
-            this.gamePrice_txtbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gamePrice_txtbox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.gamePrice_txtbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gamePrice_txtbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.gamePrice_txtbox.Location = new System.Drawing.Point(1093, 26);
-            this.gamePrice_txtbox.Name = "gamePrice_txtbox";
-            this.gamePrice_txtbox.ReadOnly = true;
-            this.gamePrice_txtbox.Size = new System.Drawing.Size(100, 19);
-            this.gamePrice_txtbox.TabIndex = 23;
             // 
             // CustomerSearch
             // 
