@@ -17,16 +17,36 @@ namespace InventoryManager
             InitializeComponent();
         }
 
+        private void ManagerNotice(object sender, EventArgs e)
+        {
+            if(GlobalVariables.ManagerNotice == true)
+            {
+                MessageBox.Show("There is low stock that needs to be reordered.");
+                GlobalVariables.ManagerNotice = false;
+            }
+            return;
+        }
+
         private void CUSTOMER_SEARCH_Load(object sender, EventArgs e)
         {
 
+            try
+            {
+                string search = CustomerSearchBox.Text;
+            }
+            catch (Exception )
+            {
+                MessageBox.Show("Invalid Search");
+                return;
+            }
+
         }
-
-        
-
-        private void CUST_SRCH_BOX_Click(object sender, EventArgs e)
+        public void CUST_SRCH_BOX_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This searches the store inventory and displays the desired item.");
+            this.Close();
+            AllInventory s = new AllInventory();
+            s.searchquery = CustomerSearchBox.Text;
+            s.Show();
         }
 
         
@@ -45,26 +65,17 @@ namespace InventoryManager
 
         private void manageUsersEvent(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             UserManagement UserManagement  = new UserManagement();
             UserManagement.Show();
         }
 
         private void btnInventoryManagement_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             InventoryManager InventoryManagement = new InventoryManager();
             InventoryManagement.Show();
         }
-
-        private void inventoryOptimizationEvent(object sender, EventArgs e)
-        {
-            MessageBox.Show("This Optomizes the Inventory.");
-        }
-
-        private void inventoryOrderEvent(object sender, EventArgs e)
-        {
-            MessageBox.Show("This Orders new Inventory.");
-        }
+        
     }
 }

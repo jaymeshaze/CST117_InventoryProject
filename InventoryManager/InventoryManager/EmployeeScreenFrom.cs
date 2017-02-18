@@ -135,6 +135,15 @@ namespace InventoryManager
                 if (c is Panel) c.Visible = false;
             }
             panel3.Visible = true;
+            SqlConnection connection1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\T2G_MainDB.mdf;Integrated Security=True");
+            connection1.Open();
+            SqlDataAdapter searchinventory = new SqlDataAdapter("SELECT Main_Inventory.Title, count(*) as inStock FROM Main_Inventory Group By Main_Inventory.Title HAVING count(*) < 4", connection1);
+            DataTable viewinventory = new DataTable();
+            searchinventory.Fill(viewinventory);
+            BindingSource inventory_BS = new BindingSource();
+            inventory_BS.DataSource = viewinventory;
+            lowStockList.DataSource = inventory_BS;
+            lowStockList.Show();
         }
 
         private void label9_Click(object sender, EventArgs e)
@@ -164,6 +173,58 @@ namespace InventoryManager
                 connection1.Open();
                 SqlCommand remove = new SqlCommand("DELETE from Main_Inventory WHERE Title = '" + value1 + "'", connection1);
                 SqlDataReader reader = remove.ExecuteReader();
+                reloadEdit();
+            }
+        }
+
+        public void reloadEdit(){
+            SqlConnection connection1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\T2G_MainDB.mdf;Integrated Security=True");
+            connection1.Open();
+            SqlDataAdapter searchinventory = new SqlDataAdapter("select Title, Details, Price, Brand, Type from Main_Inventory", connection1);
+            DataTable viewinventory = new DataTable();
+            searchinventory.Fill(viewinventory);
+            BindingSource inventory_BS = new BindingSource();
+            inventory_BS.DataSource = viewinventory;
+            editInventory.DataSource = inventory_BS;
+            editInventory.Show();
+        }
+
+        private void button1_Click_3(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addInventory_btn_Click(object sender, EventArgs e)
+        {
+                    
+        
+            NewItem NewItem = new NewItem();
+            NewItem.Show();
+        
+        /*SqlConnection connection1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\T2G_MainDB.mdf;Integrated Security=True");
+            connection1.Open();
+            SqlCommand addRecord = new SqlCommand("Insert Into Main_Inventory(Title,Details,Type,Brand,Price,Date_In) Values('" + newTitle.Text + "','" + newDetails.Text + "','" + newType.Text + "','" + newBrand.Text + "','" + newPrice.Text + "',GETDATE())", connection1);
+            SqlDataReader reader = addRecord.ExecuteReader();
+            reloadEdit();
+            MessageBox.Show("New Inventory has been Added Successfuflly!");
+            connection1.Close();*/
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Do you want to send low stock to manager?", "Send to Manager", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Warning);
+            if (result == DialogResult.Yes)
+            {
+                //code for Yes
+                GlobalVariables.ManagerNotice = true;
+            }
+            else if (result == DialogResult.No)
+            {
+                //code for No
+            }
+            else if (result == DialogResult.Cancel)
+            {
+                //code for Cancel
             }
         }
     }
