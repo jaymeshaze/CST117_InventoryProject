@@ -17,7 +17,7 @@ namespace InventoryManager
         {
             InitializeComponent();
         }
-        SqlConnection Emp_List_Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\T2G_MainDB.mdf;Integrated Security=True");
+        SqlConnection Emp_List_Con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=T2G_MainDB;Integrated Security=True;Connect Timeout=30");
 
         private void UpdateUser_Load(object sender, EventArgs e)
         {
@@ -29,6 +29,7 @@ namespace InventoryManager
             UserList_BS.DataSource = UserList_DT;
             viewUserList.DataSource = UserList_BS;
             viewUserList.Show();
+            Emp_List_Con.Close();
         }
 
         private void btnPreviousMenu_Click(object sender, EventArgs e)
@@ -92,12 +93,21 @@ namespace InventoryManager
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            Emp_List_Con.Open();
             //update sql command
             SqlCommand UpdateUserCMD = new SqlCommand("update Emp_List set fName = '" + txtbx_fName.Text + "',lName='" + txtbx_lName.Text + "',Title='" + comboBox_Title.SelectedItem + "',Username='" + txtbx_Username.Text + "',Password='" + txtbx_Password.Text + "'where Id='" + lbl_EmpID.Text + "'", Emp_List_Con);
             //command executed
             UpdateUserCMD.ExecuteNonQuery();
             //successful update confirmation message
             MessageBox.Show("User " + txtbx_fName.Text + txtbx_lName.Text + " was successfully updated!!!");
+            SqlDataAdapter UserList_SDA = new SqlDataAdapter("select  Id as 'Employee ID',fName as 'First Name',lName as 'Last Name',Title,Username,Password from Emp_List", Emp_List_Con);
+            DataTable UserList_DT = new DataTable();
+            UserList_SDA.Fill(UserList_DT);
+            BindingSource UserList_BS = new BindingSource();
+            UserList_BS.DataSource = UserList_DT;
+            viewUserList.DataSource = UserList_BS;
+            viewUserList.Show();
+            Emp_List_Con.Close();
         }
 
         private void btnDeleteUser_Click(object sender, EventArgs e)

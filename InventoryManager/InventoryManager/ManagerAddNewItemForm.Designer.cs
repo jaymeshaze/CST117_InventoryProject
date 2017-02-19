@@ -39,6 +39,7 @@
             this.btnImgBrowse = new System.Windows.Forms.Button();
             this.rtxtbx_Details = new System.Windows.Forms.RichTextBox();
             this.txtbx_Type = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.grpbx_NewUser.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             // 
             this.btnAdd.Font = new System.Drawing.Font("Neuropol", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnAdd.Location = new System.Drawing.Point(220, 485);
+            this.btnAdd.Location = new System.Drawing.Point(220, 496);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(173, 28);
@@ -74,19 +75,18 @@
             this.txtbx_Title.TabIndex = 21;
             this.txtbx_Title.Text = "Title";
             // 
-            // txtbx_lmgPath
+            // txtbx_imgPath
             // 
             this.txtbx_imgPath.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_imgPath.Location = new System.Drawing.Point(93, 285);
-            this.txtbx_imgPath.Name = "txtbx_lmgPath";
+            this.txtbx_imgPath.Location = new System.Drawing.Point(93, 308);
+            this.txtbx_imgPath.Name = "txtbx_imgPath";
             this.txtbx_imgPath.Size = new System.Drawing.Size(296, 27);
             this.txtbx_imgPath.TabIndex = 22;
-            this.txtbx_imgPath.Text = "Upload Image";
             // 
             // txtbx_Price
             // 
             this.txtbx_Price.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_Price.Location = new System.Drawing.Point(93, 326);
+            this.txtbx_Price.Location = new System.Drawing.Point(93, 349);
             this.txtbx_Price.Name = "txtbx_Price";
             this.txtbx_Price.Size = new System.Drawing.Size(432, 27);
             this.txtbx_Price.TabIndex = 24;
@@ -95,7 +95,7 @@
             // txtbx_Brand
             // 
             this.txtbx_Brand.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_Brand.Location = new System.Drawing.Point(93, 367);
+            this.txtbx_Brand.Location = new System.Drawing.Point(93, 390);
             this.txtbx_Brand.Name = "txtbx_Brand";
             this.txtbx_Brand.Size = new System.Drawing.Size(432, 27);
             this.txtbx_Brand.TabIndex = 25;
@@ -103,13 +103,14 @@
             // 
             // grpbx_NewUser
             // 
+            this.grpbx_NewUser.Controls.Add(this.label1);
             this.grpbx_NewUser.Controls.Add(this.btnImgBrowse);
             this.grpbx_NewUser.Controls.Add(this.rtxtbx_Details);
             this.grpbx_NewUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpbx_NewUser.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.grpbx_NewUser.Location = new System.Drawing.Point(73, 82);
             this.grpbx_NewUser.Name = "grpbx_NewUser";
-            this.grpbx_NewUser.Size = new System.Drawing.Size(470, 371);
+            this.grpbx_NewUser.Size = new System.Drawing.Size(470, 396);
             this.grpbx_NewUser.TabIndex = 26;
             this.grpbx_NewUser.TabStop = false;
             this.grpbx_NewUser.Text = "New Inventory Item";
@@ -118,7 +119,7 @@
             // 
             this.btnImgBrowse.Font = new System.Drawing.Font("Neuropol", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnImgBrowse.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btnImgBrowse.Location = new System.Drawing.Point(323, 202);
+            this.btnImgBrowse.Location = new System.Drawing.Point(323, 225);
             this.btnImgBrowse.Margin = new System.Windows.Forms.Padding(4);
             this.btnImgBrowse.Name = "btnImgBrowse";
             this.btnImgBrowse.Size = new System.Drawing.Size(129, 28);
@@ -132,18 +133,27 @@
             this.rtxtbx_Details.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxtbx_Details.Location = new System.Drawing.Point(20, 67);
             this.rtxtbx_Details.Name = "rtxtbx_Details";
-            this.rtxtbx_Details.Size = new System.Drawing.Size(432, 122);
+            this.rtxtbx_Details.Size = new System.Drawing.Size(432, 127);
             this.rtxtbx_Details.TabIndex = 0;
             this.rtxtbx_Details.Text = "Details";
             // 
             // txtbx_Type
             // 
             this.txtbx_Type.Font = new System.Drawing.Font("Neuropol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtbx_Type.Location = new System.Drawing.Point(93, 409);
+            this.txtbx_Type.Location = new System.Drawing.Point(93, 432);
             this.txtbx_Type.Name = "txtbx_Type";
             this.txtbx_Type.Size = new System.Drawing.Size(432, 27);
             this.txtbx_Type.TabIndex = 27;
             this.txtbx_Type.Text = "Type";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(16, 203);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(111, 20);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Upload Image";
             // 
             // NewItem
             // 
@@ -167,6 +177,7 @@
             this.Text = "Team 2 Games Add New Item";
             this.Load += new System.EventHandler(this.NewItem_Load);
             this.grpbx_NewUser.ResumeLayout(false);
+            this.grpbx_NewUser.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,5 +195,6 @@
         private System.Windows.Forms.RichTextBox rtxtbx_Details;
         private System.Windows.Forms.Button btnImgBrowse;
         private System.Windows.Forms.TextBox txtbx_Type;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -14,7 +14,7 @@ namespace InventoryManager
     public partial class CustomerSearch : Form
     {
 
-        SqlConnection Inv_con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\T2G_MainDB.mdf;Integrated Security=True");
+        SqlConnection Inv_con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=T2G_MainDB;Integrated Security=True;Connect Timeout=30");
         
 
         public CustomerSearch()

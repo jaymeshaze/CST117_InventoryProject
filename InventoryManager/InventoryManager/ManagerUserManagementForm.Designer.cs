@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserManagement));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnAddUser = new System.Windows.Forms.Button();
@@ -40,10 +41,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::InventoryManager.Properties.Resources.TTG_LOGO_LOGIN_SCREEN_WIDTH_477PX;
-            this.pictureBox1.Location = new System.Drawing.Point(531, -2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(708, -2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(486, 321);
+            this.pictureBox1.Size = new System.Drawing.Size(648, 395);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
@@ -51,9 +52,10 @@
             // 
             this.btnLogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.btnLogout.Location = new System.Drawing.Point(1250, 12);
+            this.btnLogout.Location = new System.Drawing.Point(1667, 15);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(100, 23);
+            this.btnLogout.Size = new System.Drawing.Size(133, 28);
             this.btnLogout.TabIndex = 9;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
@@ -64,10 +66,10 @@
             this.btnAddUser.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnAddUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddUser.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnAddUser.Location = new System.Drawing.Point(16, 22);
-            this.btnAddUser.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAddUser.Location = new System.Drawing.Point(21, 27);
+            this.btnAddUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAddUser.Name = "btnAddUser";
-            this.btnAddUser.Size = new System.Drawing.Size(337, 59);
+            this.btnAddUser.Size = new System.Drawing.Size(449, 73);
             this.btnAddUser.TabIndex = 10;
             this.btnAddUser.Text = "ADD NEW USER";
             this.btnAddUser.UseVisualStyleBackColor = false;
@@ -78,10 +80,10 @@
             this.btnManageUsers.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnManageUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageUsers.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnManageUsers.Location = new System.Drawing.Point(16, 92);
-            this.btnManageUsers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnManageUsers.Location = new System.Drawing.Point(21, 113);
+            this.btnManageUsers.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnManageUsers.Name = "btnManageUsers";
-            this.btnManageUsers.Size = new System.Drawing.Size(337, 59);
+            this.btnManageUsers.Size = new System.Drawing.Size(449, 73);
             this.btnManageUsers.TabIndex = 11;
             this.btnManageUsers.Text = "MANAGE USERS";
             this.btnManageUsers.UseVisualStyleBackColor = false;
@@ -92,25 +94,26 @@
             this.grpbxNavButtons.BackColor = System.Drawing.Color.DimGray;
             this.grpbxNavButtons.Controls.Add(this.btnAddUser);
             this.grpbxNavButtons.Controls.Add(this.btnManageUsers);
-            this.grpbxNavButtons.Location = new System.Drawing.Point(536, 321);
-            this.grpbxNavButtons.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.grpbxNavButtons.Location = new System.Drawing.Point(715, 395);
+            this.grpbxNavButtons.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.grpbxNavButtons.Name = "grpbxNavButtons";
-            this.grpbxNavButtons.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.grpbxNavButtons.Size = new System.Drawing.Size(368, 167);
+            this.grpbxNavButtons.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grpbxNavButtons.Size = new System.Drawing.Size(491, 206);
             this.grpbxNavButtons.TabIndex = 13;
             this.grpbxNavButtons.TabStop = false;
             // 
             // UserManagement
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1362, 741);
+            this.ClientSize = new System.Drawing.Size(1902, 1035);
             this.Controls.Add(this.grpbxNavButtons);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "UserManagement";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Team 2 Games User Management";

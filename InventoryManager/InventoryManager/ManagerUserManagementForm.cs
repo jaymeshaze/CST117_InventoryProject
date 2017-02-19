@@ -41,5 +41,7 @@ namespace InventoryManager
             LoginScreen ss = new LoginScreen();
             ss.Show();
         }
+
+
     }
 }

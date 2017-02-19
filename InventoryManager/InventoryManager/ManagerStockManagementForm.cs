@@ -38,7 +38,6 @@ namespace InventoryManager
         {
             this.Hide();
             StockSearch StockSearch = new StockSearch();
-            StockSearch.searchquery = "*";
             StockSearch.Show();
         }
 

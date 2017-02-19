@@ -78,7 +78,7 @@ namespace InventoryManager
                 if (c is Panel) c.Visible = false;
             }
             panel1.Visible = true;
-            SqlConnection connection1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\T2G_MainDB.mdf;Integrated Security=True");
+            SqlConnection connection1 = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=T2G_MainDB;Integrated Security=True;Connect Timeout=30");
             connection1.Open();
             //SqlCommand readinventory = new SqlCommand("select Title, Details, Price, Brand, Type from Main_Inventory where Main_Inventory = '" + searchquery + "'", connection1);
             //SqlDataReader inventorysearch = readinventory.ExecuteReader();
@@ -109,7 +109,7 @@ namespace InventoryManager
                 if (c is Panel) c.Visible = false;
             }
             panel2.Visible = true;
-            SqlConnection connection1 = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\T2G_MainDB.mdf;Integrated Security=True");
+            SqlConnection connection1 = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=T2G_MainDB;Integrated Security=True;Connect Timeout=30");
             connection1.Open();
             //SqlCommand readinventory = new SqlCommand("select Title, Details, Price, Brand, Type from Main_Inventory where Main_Inventory = '" + searchquery + "'", connection1);
             //SqlDataReader inventorysearch = readinventory.ExecuteReader();
