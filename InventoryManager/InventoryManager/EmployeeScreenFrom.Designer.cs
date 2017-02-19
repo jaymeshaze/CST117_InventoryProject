@@ -38,18 +38,25 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnEditInventory = new System.Windows.Forms.Button();
             this.btnStockList = new System.Windows.Forms.Button();
-            this.btnListInventory = new System.Windows.Forms.Button();
-            this.btnLowStock = new System.Windows.Forms.Button();
+            this.lowStock_btn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.newPrice = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.newBrand = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.newType = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.newDetails = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.newTitle = new System.Windows.Forms.TextBox();
             this.editInventory = new System.Windows.Forms.DataGridView();
             this.removeInventory_btn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.addInventory_btn = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.lowStockList = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button5 = new System.Windows.Forms.Button();
@@ -63,6 +70,7 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.editInventory)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lowStockList)).BeginInit();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,7 +101,7 @@
             // 
             this.btnLogout.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnLogout.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnLogout.Location = new System.Drawing.Point(1254, 12);
+            this.btnLogout.Location = new System.Drawing.Point(990, 12);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(96, 36);
             this.btnLogout.TabIndex = 13;
@@ -106,7 +114,7 @@
             this.panel1.Controls.Add(this.viewStock);
             this.panel1.Controls.Add(this.textBox3);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(260, 307);
+            this.panel1.Location = new System.Drawing.Point(257, 176);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1068, 402);
             this.panel1.TabIndex = 14;
@@ -144,7 +152,7 @@
             // 
             this.btnEditInventory.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnEditInventory.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnEditInventory.Location = new System.Drawing.Point(787, 217);
+            this.btnEditInventory.Location = new System.Drawing.Point(784, 86);
             this.btnEditInventory.Name = "btnEditInventory";
             this.btnEditInventory.Size = new System.Drawing.Size(148, 67);
             this.btnEditInventory.TabIndex = 15;
@@ -156,7 +164,7 @@
             // 
             this.btnStockList.BackColor = System.Drawing.SystemColors.HotTrack;
             this.btnStockList.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnStockList.Location = new System.Drawing.Point(941, 217);
+            this.btnStockList.Location = new System.Drawing.Point(938, 86);
             this.btnStockList.Name = "btnStockList";
             this.btnStockList.Size = new System.Drawing.Size(148, 67);
             this.btnStockList.TabIndex = 16;
@@ -164,57 +172,155 @@
             this.btnStockList.UseVisualStyleBackColor = false;
             this.btnStockList.Click += new System.EventHandler(this.btnStockList_Click);
             // 
-            // btnListInventory
+            // lowStock_btn
             // 
-            this.btnListInventory.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnListInventory.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnListInventory.Location = new System.Drawing.Point(633, 217);
-            this.btnListInventory.Name = "btnListInventory";
-            this.btnListInventory.Size = new System.Drawing.Size(148, 67);
-            this.btnListInventory.TabIndex = 17;
-            this.btnListInventory.Text = "List Store Inventory";
-            this.btnListInventory.UseVisualStyleBackColor = false;
-            this.btnListInventory.Click += new System.EventHandler(this.btnListInventory_Click);
-            // 
-            // btnLowStock
-            // 
-            this.btnLowStock.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.btnLowStock.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnLowStock.Location = new System.Drawing.Point(479, 217);
-            this.btnLowStock.Name = "btnLowStock";
-            this.btnLowStock.Size = new System.Drawing.Size(148, 67);
-            this.btnLowStock.TabIndex = 18;
-            this.btnLowStock.Text = "List Store Stock";
-            this.btnLowStock.UseVisualStyleBackColor = false;
-            this.btnLowStock.Click += new System.EventHandler(this.button2_Click);
+            this.lowStock_btn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.lowStock_btn.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.lowStock_btn.Location = new System.Drawing.Point(630, 86);
+            this.lowStock_btn.Name = "lowStock_btn";
+            this.lowStock_btn.Size = new System.Drawing.Size(148, 67);
+            this.lowStock_btn.TabIndex = 17;
+            this.lowStock_btn.Text = "Run Low Stock Report";
+            this.lowStock_btn.UseVisualStyleBackColor = false;
+            this.lowStock_btn.Click += new System.EventHandler(this.btnListInventory_Click);
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Controls.Add(this.newPrice);
+            this.panel2.Controls.Add(this.label10);
+            this.panel2.Controls.Add(this.newBrand);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.newType);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.newDetails);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.newTitle);
             this.panel2.Controls.Add(this.editInventory);
             this.panel2.Controls.Add(this.removeInventory_btn);
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.addInventory_btn);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Location = new System.Drawing.Point(263, 307);
+            this.panel2.Location = new System.Drawing.Point(260, 176);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1065, 402);
+            this.panel2.Size = new System.Drawing.Size(984, 402);
             this.panel2.TabIndex = 20;
             this.panel2.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label11.Location = new System.Drawing.Point(202, 198);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(45, 16);
+            this.label11.TabIndex = 32;
+            this.label11.Text = "Price";
+            this.label11.Visible = false;
+            // 
+            // newPrice
+            // 
+            this.newPrice.Location = new System.Drawing.Point(205, 222);
+            this.newPrice.Name = "newPrice";
+            this.newPrice.Size = new System.Drawing.Size(216, 20);
+            this.newPrice.TabIndex = 31;
+            this.newPrice.Visible = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label10.Location = new System.Drawing.Point(202, 307);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(50, 16);
+            this.label10.TabIndex = 30;
+            this.label10.Text = "Brand";
+            this.label10.Visible = false;
+            // 
+            // newBrand
+            // 
+            this.newBrand.Location = new System.Drawing.Point(205, 331);
+            this.newBrand.Name = "newBrand";
+            this.newBrand.Size = new System.Drawing.Size(216, 20);
+            this.newBrand.TabIndex = 29;
+            this.newBrand.Visible = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label4.Location = new System.Drawing.Point(202, 251);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 16);
+            this.label4.TabIndex = 28;
+            this.label4.Text = "Type";
+            this.label4.Visible = false;
+            // 
+            // newType
+            // 
+            this.newType.Location = new System.Drawing.Point(205, 275);
+            this.newType.Name = "newType";
+            this.newType.Size = new System.Drawing.Size(216, 20);
+            this.newType.TabIndex = 27;
+            this.newType.Visible = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label3.Location = new System.Drawing.Point(202, 141);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 16);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Details";
+            this.label3.Visible = false;
+            // 
+            // newDetails
+            // 
+            this.newDetails.Location = new System.Drawing.Point(205, 165);
+            this.newDetails.Name = "newDetails";
+            this.newDetails.Size = new System.Drawing.Size(216, 20);
+            this.newDetails.TabIndex = 25;
+            this.newDetails.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(202, 82);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 16);
+            this.label2.TabIndex = 24;
+            this.label2.Text = "Title";
+            this.label2.Visible = false;
+            // 
+            // newTitle
+            // 
+            this.newTitle.Location = new System.Drawing.Point(205, 106);
+            this.newTitle.Name = "newTitle";
+            this.newTitle.Size = new System.Drawing.Size(216, 20);
+            this.newTitle.TabIndex = 23;
+            this.newTitle.Visible = false;
             // 
             // editInventory
             // 
             this.editInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.editInventory.Location = new System.Drawing.Point(287, -18);
+            this.editInventory.Location = new System.Drawing.Point(334, -18);
             this.editInventory.Margin = new System.Windows.Forms.Padding(2);
             this.editInventory.Name = "editInventory";
             this.editInventory.RowTemplate.Height = 24;
-            this.editInventory.Size = new System.Drawing.Size(610, 569);
+            this.editInventory.Size = new System.Drawing.Size(563, 409);
             this.editInventory.TabIndex = 22;
             // 
             // removeInventory_btn
             // 
             this.removeInventory_btn.BackColor = System.Drawing.SystemColors.HotTrack;
             this.removeInventory_btn.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.removeInventory_btn.Location = new System.Drawing.Point(33, 144);
+            this.removeInventory_btn.Location = new System.Drawing.Point(33, 246);
             this.removeInventory_btn.Name = "removeInventory_btn";
             this.removeInventory_btn.Size = new System.Drawing.Size(148, 67);
             this.removeInventory_btn.TabIndex = 21;
@@ -222,22 +328,23 @@
             this.removeInventory_btn.UseVisualStyleBackColor = false;
             this.removeInventory_btn.Click += new System.EventHandler(this.removeInventory_btn_Click_1);
             // 
-            // button1
+            // addInventory_btn
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.Location = new System.Drawing.Point(33, 57);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 67);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Add Inventory";
-            this.button1.UseVisualStyleBackColor = false;
+            this.addInventory_btn.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.addInventory_btn.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.addInventory_btn.Location = new System.Drawing.Point(33, 141);
+            this.addInventory_btn.Name = "addInventory_btn";
+            this.addInventory_btn.Size = new System.Drawing.Size(148, 67);
+            this.addInventory_btn.TabIndex = 20;
+            this.addInventory_btn.Text = "Add Inventory";
+            this.addInventory_btn.UseVisualStyleBackColor = false;
+            this.addInventory_btn.Click += new System.EventHandler(this.addInventory_btn_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 241);
+            this.label5.Location = new System.Drawing.Point(60, 25);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(241, 29);
             this.label5.TabIndex = 6;
@@ -245,67 +352,46 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.lowStockList);
             this.panel3.Controls.Add(this.button4);
-            this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.textBox5);
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(260, 307);
+            this.panel3.Location = new System.Drawing.Point(257, 176);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1065, 393);
             this.panel3.TabIndex = 22;
             this.panel3.Visible = false;
             // 
-            // button3
+            // lowStockList
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.button3.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button3.Location = new System.Drawing.Point(398, 57);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(148, 67);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Check stock against low stock";
-            this.button3.UseVisualStyleBackColor = false;
+            this.lowStockList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.lowStockList.Location = new System.Drawing.Point(398, 73);
+            this.lowStockList.Margin = new System.Windows.Forms.Padding(2);
+            this.lowStockList.Name = "lowStockList";
+            this.lowStockList.RowTemplate.Height = 24;
+            this.lowStockList.Size = new System.Drawing.Size(563, 295);
+            this.lowStockList.TabIndex = 23;
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button4.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.button4.Location = new System.Drawing.Point(235, 57);
+            this.button4.Location = new System.Drawing.Point(208, 73);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(148, 67);
             this.button4.TabIndex = 20;
-            this.button4.Text = "List Low Stock";
+            this.button4.Text = "Notify Manager";
             this.button4.UseVisualStyleBackColor = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(728, 241);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(312, 37);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Under Construction";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(633, 93);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(491, 300);
-            this.textBox5.TabIndex = 7;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(675, 21);
+            this.label7.Location = new System.Drawing.Point(522, 29);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(225, 29);
+            this.label7.Size = new System.Drawing.Size(181, 29);
             this.label7.TabIndex = 6;
-            this.label7.Text = "List of Store Stock";
+            this.label7.Text = "Low Stock List";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // panel4
@@ -315,7 +401,7 @@
             this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.textBox6);
             this.panel4.Controls.Add(this.label9);
-            this.panel4.Location = new System.Drawing.Point(260, 307);
+            this.panel4.Location = new System.Drawing.Point(257, 176);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1065, 393);
             this.panel4.TabIndex = 23;
@@ -379,17 +465,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(1277, 733);
-            this.Controls.Add(this.btnLowStock);
-            this.Controls.Add(this.btnListInventory);
+            this.Controls.Add(this.lowStock_btn);
             this.Controls.Add(this.btnStockList);
             this.Controls.Add(this.btnEditInventory);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.Header);
             this.Controls.Add(this.LoginLogo);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -407,6 +492,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.editInventory)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lowStockList)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
@@ -421,19 +507,15 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnEditInventory;
         private System.Windows.Forms.Button btnStockList;
-        private System.Windows.Forms.Button btnListInventory;
-        private System.Windows.Forms.Button btnLowStock;
+        private System.Windows.Forms.Button lowStock_btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button removeInventory_btn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button addInventory_btn;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button5;
@@ -443,5 +525,16 @@
         private System.Windows.Forms.Label label9;
         public System.Windows.Forms.DataGridView viewStock;
         public System.Windows.Forms.DataGridView editInventory;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox newPrice;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox newBrand;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox newType;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox newDetails;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox newTitle;
+        public System.Windows.Forms.DataGridView lowStockList;
     }
 }
