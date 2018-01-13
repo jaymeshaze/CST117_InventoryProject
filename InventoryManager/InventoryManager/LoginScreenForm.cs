@@ -20,7 +20,7 @@ namespace InventoryManager
 
         private void LOGIN_BUTTON_Click(object sender, EventArgs e)
         {
-            //connection is made to T2G_MainDB
+            //connection is made to T2G_MainDB, located in project files
             
             SqlConnection Emp_List_Con = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=T2G_MainDB;Integrated Security=True;Connect Timeout=30");
             Emp_List_Con.Open();
